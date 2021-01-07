@@ -42,9 +42,9 @@ h1 {
   border: #fff solid 0.2rem;
   font-size: 1rem;
   font-weight: bold;
+  text-transform: uppercase;
   width: 15rem;
   padding: 1.5rem;
-  text-transform: uppercase;
 }
 
 .split.left .btn:hover {
@@ -108,7 +108,7 @@ h1 {
   transition: all var(--speed) ease-in-out;
 }
 
-.split.right .hover-left .left {
+.hover-left .left {
   width: var(--hover-width);
 }
 
@@ -127,6 +127,7 @@ h1 {
 @media (max-width: 800px) {
   h1 {
     font-size: 2rem;
+    top: 30%;
   }
 
   .btn {
