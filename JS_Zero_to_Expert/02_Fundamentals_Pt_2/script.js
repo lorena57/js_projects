@@ -84,3 +84,16 @@
 
 // console.log(ages)
 
+
+//Backwards loop
+// const lorenaArray = [
+//     'Lorena',
+//     'DaBest',
+//     2039 - 2000,
+//     'student',
+//     ['Larry', 'Moe', 'Curly']
+// ];
+
+// for(let i = lorenaArray.length - 1; i >= 0 ; i--) {
+// console.log(lorenaArray[i])    
+// }
