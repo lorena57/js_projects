@@ -6,30 +6,28 @@
 //     friends: ['Larry', 'Curly', 'Moe'],
 //     hasDriversLicense: true,
 
-    // calcAge: function(birthYear) {
-    //     return 2037 - birthYear
-    // }
+// calcAge: function(birthYear) {
+//     return 2037 - birthYear
+// }
 
-    // calcAge: function() {
+// calcAge: function() {
 // this points to lorena the object
 //     return 2037 - this.birthYear;
 //     }
 // }
 
-
 // this.age creates a new property on the object (the lorena object)
-    // calcAge: function() {
-    //     console.log(lorena)
-    //     this.age = 2037 - this.birthYear
-    // return this.age;
-   
-    // },
+// calcAge: function() {
+//     console.log(lorena)
+//     this.age = 2037 - this.birthYear
+// return this.age;
 
-//     getSummary: function() { 
-//         return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and she has 
-//         ${this.hasDriversLicense ? 'a' : 'no'} driver's license.` 
+// },
+
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and she has
+//         ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
 //     }
-
 
 // }
 
@@ -60,14 +58,13 @@
 
 // const types = [];
 
-
 // for(let i = 0; i < lorenaArray.length ; i++) {
-    // console.log(lorenaArray[i], typeof lorenaArray[i])
+// console.log(lorenaArray[i], typeof lorenaArray[i])
 
-    //copying lorenaArray into types array
-    // types[i] = lorenaArray[i]
+//copying lorenaArray into types array
+// types[i] = lorenaArray[i]
 
-    //Or I can push the items into the array
+//Or I can push the items into the array
 //     types.push(lorenaArray[i])
 // }
 
@@ -78,12 +75,11 @@
 // const ages = [];
 
 // for(i = 0; i < years.length; i++) {
-    // years[i] is the current loop position
+// years[i] is the current loop position
 //     ages.push(2037 - years[i]);
 // }
 
 // console.log(ages)
-
 
 //Backwards loop
 // const lorenaArray = [
@@ -95,7 +91,7 @@
 // ];
 
 // for(let i = lorenaArray.length - 1; i >= 0 ; i--) {
-// console.log(lorenaArray[i])    
+// console.log(lorenaArray[i])
 // }
 
 // for(let coding = 1; coding < 4; coding++){
@@ -122,7 +118,7 @@
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
-while(dice !== 6) {
-    console.log(`You rolled a ${dice}`)
-    dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
