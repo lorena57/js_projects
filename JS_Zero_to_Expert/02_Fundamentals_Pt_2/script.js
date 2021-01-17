@@ -49,3 +49,38 @@
 // for( let i = 1; i <= 10; i++) {
 //     console.log(`Lifting weights repetition ${i}`)
 // }
+
+// const lorenaArray = [
+//     'Lorena',
+//     'DaBest',
+//     2039 - 2000,
+//     'student',
+//     ['Larry', 'Moe', 'Curly']
+// ];
+
+// const types = [];
+
+
+// for(let i = 0; i < lorenaArray.length ; i++) {
+    // console.log(lorenaArray[i], typeof lorenaArray[i])
+
+    //copying lorenaArray into types array
+    // types[i] = lorenaArray[i]
+
+    //Or I can push the items into the array
+//     types.push(lorenaArray[i])
+// }
+
+// console.log(types)
+
+// const years = [ 1970, 1980, 1990, 2000]
+
+// const ages = [];
+
+// for(i = 0; i < years.length; i++) {
+    // years[i] is the current loop position
+//     ages.push(2037 - years[i]);
+// }
+
+// console.log(ages)
+
