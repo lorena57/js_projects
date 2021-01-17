@@ -97,3 +97,12 @@
 // for(let i = lorenaArray.length - 1; i >= 0 ; i--) {
 // console.log(lorenaArray[i])    
 // }
+
+for(let coding = 1; coding < 4; coding++){
+    console.log(`-----Start coding ${coding}`);
+
+    for(let language = 1; language < 6; language++){
+        console.log(`Learning my code repetition ${language}`)
+    }
+
+}
