@@ -9,7 +9,6 @@ document.querySelector('.check').addEventListener('click', function () {
   //const guess gets the value that was submitted
   const guess = Number(document.querySelector('.guess').value);
 
-  //!guess will turn false to true and true to false
   if (!guess) {
     document.querySelector('.message').textContent = '🚫 No number';
   } else if (guess === secretNumber) {

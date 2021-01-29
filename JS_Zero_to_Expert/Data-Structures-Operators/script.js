@@ -12,6 +12,10 @@ const restaurant = {
   },
 };
 
+console.log(restaurant.order(2, 0));
+// To destructure do the following:
+
+// starter is the 2nd item from the array and 0 is the 1st item from the array;
 const [starter, mainMeal] = restaurant.order(2, 0);
 console.log(starter, mainMeal);
 
@@ -23,9 +27,11 @@ const c = arr[2];
 // const [x, y, z] is not an array, It's just a destructuring assignment
 //  = arr is the array from which I want to get the data from
 const [x, y, z] = arr;
-console.log(x, y, z);
+// console.log(x, y, z);
 
 // the multiple commas in the constant allows me to retrieve  the specific item from the array (I can skip items)
+
+// main is Italian and secondary is Vegetarian (the , skips an object)
 let [main, , secondary] = restaurant.categories;
 console.log(main, secondary);
 

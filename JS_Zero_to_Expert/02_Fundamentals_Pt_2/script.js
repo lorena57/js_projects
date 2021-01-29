@@ -116,9 +116,14 @@
 //     rep++;
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while (dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-}
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+// }
+
+const tester = 'Lorena';
+
+const number = 5 + 3;
+console.log(number);
