@@ -35,7 +35,6 @@ const [x, y, z] = arr;
 let [main, , secondary] = restaurant.categories;
 // console.log(main, secondary);
 
-// switches variables
 [main, secondary] = [secondary, main];
 // console.log(main, secondary);
 
@@ -67,3 +66,15 @@ const [i, , [j, k]] = nested;
 // console.log(i, j);
 // Now 2 5 and 6 are there own objects and not in an array
 console.log(i, j, k);
+
+const chicken = {
+  dark: ['Drumstick', 'Thigh'],
+  white: ['Breast', 'Wing'],
+};
+
+// fried is drumstick
+let [fried, baked] = chicken.dark;
+console.log(fried);
+
+[fried, baked] = [baked, fried];
+console.log(fried);
