@@ -27,7 +27,7 @@ const restaurant = {
 
 const [starter, mainCourse] = restaurant.order(2, 0);
 
-console.log(starter, mainCourse);
+// console.log(starter, mainCourse);
 
 // *****Destructuring*****
 // 1. When the brackets are on the left of the = JS knows it is destructing
@@ -42,5 +42,10 @@ console.log(main, secondary);
 
 // This is the new array
 [main, secondary] = [secondary, main];
-
 console.log(main, secondary);
+
+// Nested destructuring
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
