@@ -12,3 +12,12 @@ console.log(year);
 
 year = 2022;
 console.log(year);
+
+let age = 18;
+//let variable are mutable
+age = 19;
+console.log(age);
+
+const birthYear = 1957;
+//const variable are immutable
+// birthYear = 1975;
