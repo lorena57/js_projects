@@ -17,3 +17,17 @@ console.log(typeof language);
 language = 'English';
 language = 'Spanish';
 console.log(language);
+
+// LECTURE: Basic Operators
+population += 1;
+console.log(population);
+
+const finland = 6000000;
+console.log(finland > country);
+
+averagePop = 33000000;
+
+console.log(averagePop < country);
+
+let description =
+  'Portugal is in Europe, and its 11 million people speak Portugese';
