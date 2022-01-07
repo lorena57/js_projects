@@ -31,3 +31,7 @@ console.log(averagePop < country);
 
 let description =
   'Portugal is in Europe, and its 11 million people speak Portugese';
+
+let newDescription = `${description}`;
+
+console.log(newDescription);
