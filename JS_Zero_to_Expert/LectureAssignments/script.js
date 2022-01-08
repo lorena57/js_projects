@@ -35,3 +35,10 @@ let description =
 let newDescription = `${description}`;
 
 console.log(newDescription);
+
+// LECTURE: Taking Decisions: if / else Statements
+if (population <= 13) {
+  console.log("Portugal's population is above average");
+} else {
+  console.log("Portugal's population is 22 million below average");
+}
