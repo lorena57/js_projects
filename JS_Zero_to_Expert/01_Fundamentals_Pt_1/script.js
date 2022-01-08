@@ -36,12 +36,23 @@
 // x += 10; //+= is adding what is to the right of the operator, 25
 // console.log(x);
 
-const firstName = 'Lenny';
-const lastName = 'Smith';
-const birthYear = 1980;
-const presentYear = 2057;
+// const firstName = 'Lenny';
+// const lastName = 'Smith';
+// const birthYear = 1980;
+// const presentYear = 2057;
 
-const yourSelf = `I'm ${firstName} ${lastName} and I was born in ${birthYear} which makes me ${
-  presentYear - birthYear
-} years old.`;
-console.log(yourSelf);
+// const yourSelf = `I'm ${firstName} ${lastName} and I was born in ${birthYear} which makes me ${
+//   presentYear - birthYear
+// } years old.`;
+// console.log(yourSelf);
+
+const presentAge = 15;
+
+// const isOldEnough = presentAge >= 18;
+
+if (presentAge >= 18) {
+  console.log('Todd can start diving');
+} else {
+  const yearsLeft = 18 - presentAge;
+  console.log(`Todd is too young.  Wait another ${yearsLeft} years`);
+}
