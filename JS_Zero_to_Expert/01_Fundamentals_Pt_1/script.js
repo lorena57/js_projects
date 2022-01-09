@@ -50,9 +50,22 @@ const presentAge = 15;
 
 // const isOldEnough = presentAge >= 18;
 
-if (presentAge >= 18) {
-  console.log('Todd can start diving');
-} else {
-  const yearsLeft = 18 - presentAge;
-  console.log(`Todd is too young.  Wait another ${yearsLeft} years`);
-}
+// if (presentAge >= 18) {
+//   console.log('Todd can start diving');
+// } else {
+//   const yearsLeft = 18 - presentAge;
+//   console.log(`Todd is too young.  Wait another ${yearsLeft} years`);
+// }
+
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+
+// console.log(String(23), 23);
+
+// console.log('23' - '10' - 3);
+// console.log('23' + '10' + 3);
+// console.log('23' * 3);
+
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n);
