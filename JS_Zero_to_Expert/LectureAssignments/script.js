@@ -42,3 +42,13 @@ if (population <= 13) {
 } else {
   console.log("Portugal's population is 22 million below average");
 }
+
+// LECTURE: Type Conversion and Coercion
+let testOne = '9' - '5';
+console.log(String(testOne), testOne);
+
+let testTwo = '19' - '13' - '17';
+console.log(testTwo);
+
+let testThree = 5 + 6 + '4' + 9 - 4 - 2;
+console.log(testThree);
