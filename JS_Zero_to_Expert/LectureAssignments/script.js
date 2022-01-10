@@ -52,3 +52,15 @@ console.log(testTwo);
 
 let testThree = 5 + 6 + '4' + 9 - 4 - 2;
 console.log(testThree);
+
+//
+
+let numNeighbors = prompt(
+  'How many neighbors countries does your country have?'
+);
+
+if (numNeighbors == 1) {
+  console.log('Only 1 border');
+} else if (numNeighbors >= 1) {
+  console.log('More that 1 border');
+}
