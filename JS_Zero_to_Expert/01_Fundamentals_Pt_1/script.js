@@ -86,3 +86,11 @@ if (height) {
 } else {
   console.log('Height is undefined');
 }
+
+const age = 21;
+
+if (age === 18) {
+  console.log('You can register to vote');
+} else {
+  console.log('You can now visit your local bar');
+}
