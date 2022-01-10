@@ -94,3 +94,13 @@ if (age === 18) {
 } else {
   console.log('You can now visit your local bar');
 }
+
+const favorite = Number(prompt("What's your favorite number?"));
+
+if (favorite === 7) {
+  console.log('Cool, you picked the right number');
+} else if (favorite === 5) {
+  console.log('You are on mark, you picked the right number');
+} else {
+  console.log('better luck next time');
+}
