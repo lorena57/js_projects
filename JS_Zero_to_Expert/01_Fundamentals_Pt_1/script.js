@@ -72,35 +72,50 @@
 
 //Five falsy values: 0 , '' , undefined, null, NaN
 
-const money = 0;
+// const money = 0;
 
-if (money) {
-  console.log("Don't spend it all");
+// if (money) {
+//   console.log("Don't spend it all");
+// } else {
+//   console.log('You should get a job');
+// }
+
+// let height;
+// if (height) {
+//   console.log('Yay, Height is defined');
+// } else {
+//   console.log('Height is undefined');
+// }
+
+// const age = 21;
+
+// if (age === 18) {
+//   console.log('You can register to vote');
+// } else {
+//   console.log('You can now visit your local bar');
+// }
+
+// const favorite = Number(prompt("What's your favorite number?"));
+
+// if (favorite === 7) {
+//   console.log('Cool, you picked the right number');
+// } else if (favorite === 5) {
+//   console.log('You are on mark, you picked the right number');
+// } else {
+//   console.log('better luck next time');
+// }
+
+let hasDriversLicense = true;
+let hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log('Sarah is able to drive');
 } else {
-  console.log('You should get a job');
-}
-
-let height;
-if (height) {
-  console.log('Yay, Height is defined');
-} else {
-  console.log('Height is undefined');
-}
-
-const age = 21;
-
-if (age === 18) {
-  console.log('You can register to vote');
-} else {
-  console.log('You can now visit your local bar');
-}
-
-const favorite = Number(prompt("What's your favorite number?"));
-
-if (favorite === 7) {
-  console.log('Cool, you picked the right number');
-} else if (favorite === 5) {
-  console.log('You are on mark, you picked the right number');
-} else {
-  console.log('better luck next time');
+  console.log('Someone else should drive');
 }
