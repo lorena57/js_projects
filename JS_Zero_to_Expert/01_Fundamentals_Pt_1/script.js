@@ -120,7 +120,7 @@
 //   console.log('Someone else should drive');
 // }
 
-const day = 'tuessday';
+// const day = 'tuessday';
 
 // switch (day) {
 //   case 'monday':
@@ -142,16 +142,27 @@ const day = 'tuessday';
 //     break;
 // }
 
-if (day === 'monday') {
-  console.log('Get ready for a long day');
-} else if (day === 'tuesday') {
-  console.log('One day in one 4 more to go');
-} else if (day === 'wednesday') {
-  console.log('hump day');
-} else if (day === 'thursday') {
-  console.log('So far but so close.....');
-} else if (day === 'friday') {
-  console.log('I made it to the end');
-} else {
-  console.log('my days got mixed up');
-}
+// if (day === 'monday') {
+//   console.log('Get ready for a long day');
+// } else if (day === 'tuesday') {
+//   console.log('One day in one 4 more to go');
+// } else if (day === 'wednesday') {
+//   console.log('hump day');
+// } else if (day === 'thursday') {
+//   console.log('So far but so close.....');
+// } else if (day === 'friday') {
+//   console.log('I made it to the end');
+// } else {
+//   console.log('my days got mixed up');
+// }
+
+let drinkingAge = 25;
+
+drinkingAge >= 21
+  ? console.log("I'm ready to hit the bars")
+  : console.log("I'll have a juice box instead");
+
+const drink = drinkingAge >= 21 ? 'wine' : 'juice';
+console.log(drink);
+
+console.log(`I like to drink ${drinkingAge >= 21 ? 'wine' : 'juice'}`);
