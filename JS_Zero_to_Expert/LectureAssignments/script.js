@@ -1,7 +1,8 @@
 // LECTURE: Values and Variables
 let country = 'USA';
 let continent = 'North America';
-let population = 371107709;
+// let population = 371107709;
+let population = 10;
 
 console.log(country, continent, population);
 
@@ -88,3 +89,11 @@ switch (languageOne) {
   default:
     console.log('Great language too');
 }
+
+// LECTURE: The Conditional (Ternary) Operator
+const currentPop =
+  population >= 33000000
+    ? "Portugal's population is above average"
+    : "Portugal's population is below average";
+
+console.log(currentPop);
