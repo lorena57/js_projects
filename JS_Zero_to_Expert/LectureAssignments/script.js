@@ -64,3 +64,27 @@ if (numNeighbors == 1) {
 } else if (numNeighbors >= 1) {
   console.log('More that 1 border');
 }
+
+// LECTURE: The switch Statement
+
+const languageOne = 'spanish';
+
+switch (languageOne) {
+  case 'chinese':
+    console.log('Most number of native speakers');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too');
+}
