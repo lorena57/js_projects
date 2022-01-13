@@ -21,8 +21,8 @@
 //   console.log(`John's BMI ${johnBMI} is higher than Mark's`);
 // }
 
-let dolphins = (96 + 108 + 89) / 3;
-let koalas = (88 + 91 + 110) / 3;
+// let dolphins = (96 + 108 + 89) / 3;
+// let koalas = (88 + 91 + 110) / 3;
 
 // My solution:
 // if (dolphins > koalas) {
@@ -31,10 +31,19 @@ let koalas = (88 + 91 + 110) / 3;
 //   console.log('we have a draw');
 // }
 
-if (dolphins > koalas) {
-  console.log('Dolphis win');
-} else if (koalas > dolphins) {
-  console.log('we have a draw');
-} else if (dolphins === koalas) {
-  console.log('we have a draw');
-}
+// if (dolphins > koalas) {
+//   console.log('Dolphis win');
+// } else if (koalas > dolphins) {
+//   console.log('we have a draw');
+// } else if (dolphins === koalas) {
+//   console.log('we have a draw');
+// }
+
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill was $${bill}, the tip was $${tip}, and the total value $${
+    bill + tip
+  }`
+);
