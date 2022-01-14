@@ -97,3 +97,11 @@ const currentPop =
     : "Portugal's population is below average";
 
 console.log(currentPop);
+
+function describeCountry(country, population, capitalCity) {
+  const countryInfo = `${country} has ${population} and its capital city is ${capitalCity}`;
+  return countryInfo;
+}
+
+let scenerioOne = describeCountry('United States', '33 million', 'Sacramento');
+console.log(scenerioOne);
