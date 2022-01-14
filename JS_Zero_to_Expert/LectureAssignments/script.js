@@ -98,6 +98,7 @@ const currentPop =
 
 console.log(currentPop);
 
+// LECTURE: Functions;
 function describeCountry(country, population, capitalCity) {
   const countryInfo = `${country} has ${population} and its capital city is ${capitalCity}`;
   return countryInfo;
@@ -105,3 +106,21 @@ function describeCountry(country, population, capitalCity) {
 
 let scenerioOne = describeCountry('United States', '33 million', 'Sacramento');
 console.log(scenerioOne);
+
+// LECTURE: Function Declarations vs. Expressions
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+let lies = percentageOfWorld1(33000000000);
+
+console.log(lies);
+
+let anotherOne = function (population) {
+  return (population / 7900) * 100;
+};
+
+let anotherTwo = anotherOne(33000000057);
+
+console.log(anotherTwo);
