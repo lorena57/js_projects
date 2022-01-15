@@ -129,3 +129,12 @@ console.log(anotherTwo);
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
 const testOneTwo = percentageOfWorld3(33555555555999997);
 console.log(testOne);
+
+// LECTURE: Functions Calling Other Functions
+function describePopulation(country, population) {
+  const newTstFunction = percentageOfWorld1(population);
+  const description = `${country} has ${population} million people, which is ${newTstFunction}  of the world`;
+  console.log(description);
+}
+
+console.log(describePopulation('USA', 2));
