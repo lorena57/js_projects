@@ -120,7 +120,12 @@ console.log(lies);
 let anotherOne = function (population) {
   return (population / 7900) * 100;
 };
-
 let anotherTwo = anotherOne(33000000057);
 
 console.log(anotherTwo);
+
+// LECTURE: Arrow Functions
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+const testOneTwo = percentageOfWorld3(33555555555999997);
+console.log(testOne);
