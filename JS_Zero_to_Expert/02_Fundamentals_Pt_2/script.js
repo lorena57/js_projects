@@ -57,3 +57,15 @@ function juiceMaker(apples, oranges) {
 }
 
 console.log(juiceMaker(5, 10));
+
+const newCalcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirementAgain = function (birthYear, firstName) {
+  const eda = newCalcAge(birthYear);
+  const retirement = 65 - eda;
+  return retirement;
+};
+
+console.log(yearsUntilRetirementAgain(2000, 'Jane'));
