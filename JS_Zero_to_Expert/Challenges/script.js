@@ -39,11 +39,28 @@
 //   console.log('we have a draw');
 // }
 
-const bill = 275;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// const bill = 275;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 
-console.log(
-  `The bill was $${bill}, the tip was $${tip}, and the total value $${
-    bill + tip
-  }`
-);
+// console.log(
+//   `The bill was $${bill}, the tip was $${tip}, and the total value $${
+//     bill + tip
+//   }`
+// );
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+const dolphinsScore = calcAverage(44, 23, 71);
+const koalasScore = calcAverage(65, 54, 49);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win ${avgDolphins} vs ${avgKoalas}`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Dolphins win ${avgKoalas} vs ${avgDolphins}`);
+  } else {
+    console.log('no team wins');
+  }
+}
+
+console.log(checkWinner(dolphinsScore, koalasScore));
