@@ -86,3 +86,21 @@ console.log(variousTypes);
 variousTypes[2] = false;
 
 console.log(variousTypes);
+
+const newFriend = friends.push('Frank');
+
+console.log(friends);
+console.log(newFriend);
+
+friends.unshift('Nancy');
+
+console.log(friends);
+
+friends.pop();
+console.log(friends);
+
+console.log(friends.lastIndexOf('Eddie'));
+
+if (friends.includes('Eddie')) {
+  console.log('I have a friend named Eddie');
+}
