@@ -48,19 +48,29 @@
 //   }`
 // );
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-const dolphinsScore = calcAverage(44, 23, 71);
-const koalasScore = calcAverage(65, 54, 49);
+// const dolphinsScore = calcAverage(44, 23, 71);
+// const koalasScore = calcAverage(65, 54, 49);
 
-function checkWinner(avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win ${avgDolphins} vs ${avgKoalas}`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Dolphins win ${avgKoalas} vs ${avgDolphins}`);
-  } else {
-    console.log('no team wins');
-  }
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win ${avgDolphins} vs ${avgKoalas}`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Dolphins win ${avgKoalas} vs ${avgDolphins}`);
+//   } else {
+//     console.log('no team wins');
+//   }
+// }
+
+// console.log(checkWinner(dolphinsScore, koalasScore));
+
+function calcTip(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
 
-console.log(checkWinner(dolphinsScore, koalasScore));
+let bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+console.log(tips);
