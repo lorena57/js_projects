@@ -1,111 +1,111 @@
 // LECTURE: Values and Variables
-let country = 'USA';
-let continent = 'North America';
+// let country = 'USA';
+// let continent = 'North America';
 // let population = 371107709;
-let population = 10;
+// let population = 10;
 
-console.log(country, continent, population);
+// console.log(country, continent, population);
 
 // LECTURE: Data Types
-let isIsland = false;
-let language;
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+// let isIsland = false;
+// let language;
+// console.log(typeof isIsland);
+// console.log(typeof population);
+// console.log(typeof country);
+// console.log(typeof language);
 
 // LECTURE: let, const and var
-language = 'English';
-language = 'Spanish';
-console.log(language);
+// language = 'English';
+// language = 'Spanish';
+// console.log(language);
 
 // LECTURE: Basic Operators
-population += 1;
-console.log(population);
+// population += 1;
+// console.log(population);
 
-const finland = 6000000;
-console.log(finland > country);
+// const finland = 6000000;
+// console.log(finland > country);
 
-averagePop = 33000000;
+// averagePop = 33000000;
 
-console.log(averagePop < country);
+// console.log(averagePop < country);
 
-let description =
-  'Portugal is in Europe, and its 11 million people speak Portugese';
+// let description =
+//   'Portugal is in Europe, and its 11 million people speak Portugese';
 
-let newDescription = `${description}`;
+// let newDescription = `${description}`;
 
-console.log(newDescription);
+// console.log(newDescription);
 
 // LECTURE: Taking Decisions: if / else Statements
-if (population <= 13) {
-  console.log("Portugal's population is above average");
-} else {
-  console.log("Portugal's population is 22 million below average");
-}
+// if (population <= 13) {
+//   console.log("Portugal's population is above average");
+// } else {
+//   console.log("Portugal's population is 22 million below average");
+// }
 
 // LECTURE: Type Conversion and Coercion
-let testOne = '9' - '5';
-console.log(String(testOne), testOne);
+// let testOne = '9' - '5';
+// console.log(String(testOne), testOne);
 
-let testTwo = '19' - '13' - '17';
-console.log(testTwo);
+// let testTwo = '19' - '13' - '17';
+// console.log(testTwo);
 
-let testThree = 5 + 6 + '4' + 9 - 4 - 2;
-console.log(testThree);
+// let testThree = 5 + 6 + '4' + 9 - 4 - 2;
+// console.log(testThree);
 
-//
+// //
 
-let numNeighbors = prompt(
-  'How many neighbors countries does your country have?'
-);
+// let numNeighbors = prompt(
+//   'How many neighbors countries does your country have?'
+// );
 
-if (numNeighbors == 1) {
-  console.log('Only 1 border');
-} else if (numNeighbors >= 1) {
-  console.log('More that 1 border');
-}
+// if (numNeighbors == 1) {
+//   console.log('Only 1 border');
+// } else if (numNeighbors >= 1) {
+//   console.log('More that 1 border');
+// }
 
 // LECTURE: The switch Statement
 
-const languageOne = 'spanish';
+// const languageOne = 'spanish';
 
-switch (languageOne) {
-  case 'chinese':
-    console.log('Most number of native speakers');
-    break;
-  case 'spanish':
-    console.log('2nd place in number of native speakers');
-    break;
-  case 'english':
-    console.log('3rd place');
-    break;
-  case 'hindi':
-    console.log('number 4');
-    break;
-  case 'arabic':
-    console.log('5th most spoken language');
-    break;
-  default:
-    console.log('Great language too');
-}
+// switch (languageOne) {
+//   case 'chinese':
+//     console.log('Most number of native speakers');
+//     break;
+//   case 'spanish':
+//     console.log('2nd place in number of native speakers');
+//     break;
+//   case 'english':
+//     console.log('3rd place');
+//     break;
+//   case 'hindi':
+//     console.log('number 4');
+//     break;
+//   case 'arabic':
+//     console.log('5th most spoken language');
+//     break;
+//   default:
+//     console.log('Great language too');
+//}
 
 // LECTURE: The Conditional (Ternary) Operator
-const currentPop =
-  population >= 33000000
-    ? "Portugal's population is above average"
-    : "Portugal's population is below average";
+// const currentPop =
+//   population >= 33000000
+//     ? "Portugal's population is above average"
+//     : "Portugal's population is below average";
 
-console.log(currentPop);
+// console.log(currentPop);
 
 // LECTURE: Functions;
-function describeCountry(country, population, capitalCity) {
-  const countryInfo = `${country} has ${population} and its capital city is ${capitalCity}`;
-  return countryInfo;
-}
+// function describeCountry(country, population, capitalCity) {
+//   const countryInfo = `${country} has ${population} and its capital city is ${capitalCity}`;
+//   return countryInfo;
+// }
 
-let scenerioOne = describeCountry('United States', '33 million', 'Sacramento');
-console.log(scenerioOne);
+// let scenerioOne = describeCountry('United States', '33 million', 'Sacramento');
+// console.log(scenerioOne);
 
 // LECTURE: Function Declarations vs. Expressions
 
@@ -117,24 +117,37 @@ let lies = percentageOfWorld1(33000000000);
 
 console.log(lies);
 
-let anotherOne = function (population) {
-  return (population / 7900) * 100;
-};
-let anotherTwo = anotherOne(33000000057);
+// let anotherOne = function (population) {
+//   return (population / 7900) * 100;
+// };
+// let anotherTwo = anotherOne(33000000057);
 
-console.log(anotherTwo);
+// console.log(anotherTwo);
 
 // LECTURE: Arrow Functions
 
-const percentageOfWorld3 = (population) => (population / 7900) * 100;
-const testOneTwo = percentageOfWorld3(33555555555999997);
-console.log(testOne);
+// const percentageOfWorld3 = (population) => (population / 7900) * 100;
+// const testOneTwo = percentageOfWorld3(33555555555999997);
+// console.log(testOne);
 
 // LECTURE: Functions Calling Other Functions
-function describePopulation(country, population) {
-  const newTstFunction = percentageOfWorld1(population);
-  const description = `${country} has ${population} million people, which is ${newTstFunction}  of the world`;
-  console.log(description);
-}
+// function describePopulation(country, population) {
+//   const newTstFunction = percentageOfWorld1(population);
+//   const description = `${country} has ${population} million people, which is ${newTstFunction}  of the world`;
+//   console.log(description);
+// }
 
-console.log(describePopulation('USA', 2));
+// console.log(describePopulation('USA', 2));
+
+let populations = [15, 30, 1000, 5000];
+
+console.log(populations.length === 4);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+
+console.log(percentages);
