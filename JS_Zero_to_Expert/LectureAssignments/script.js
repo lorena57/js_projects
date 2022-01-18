@@ -152,6 +152,7 @@ console.log(lies);
 
 // console.log(percentages);
 
+// LECTURE: Introduction to Objects
 let myCountry = {
   country: 'United States',
   capital: 'Washington D.C',
@@ -159,4 +160,15 @@ let myCountry = {
   population: 331002651,
 };
 
+// console.log(myCountry);
+
+// LECTURE: Dot vs. Bracket Notation
+
+let countryInfo = `${myCountry.country} capital is ${myCountry.capital}, as of today the ${myCountry.country} has a population of ${myCountry.population}`;
+console.log(countryInfo);
+
+myCountry.population = 332002651;
+console.log(myCountry);
+
+myCountry['population'] = 331002651;
 console.log(myCountry);
