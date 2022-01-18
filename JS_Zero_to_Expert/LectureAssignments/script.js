@@ -139,15 +139,24 @@ console.log(lies);
 
 // console.log(describePopulation('USA', 2));
 
-let populations = [15, 30, 1000, 5000];
+// let populations = [15, 30, 1000, 5000];
 
-console.log(populations.length === 4);
+// console.log(populations.length === 4);
 
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
 
-console.log(percentages);
+// console.log(percentages);
+
+let myCountry = {
+  country: 'United States',
+  capital: 'Washington D.C',
+  language: 'English',
+  population: 331002651,
+};
+
+console.log(myCountry);
