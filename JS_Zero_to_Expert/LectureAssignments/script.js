@@ -158,17 +158,25 @@ let myCountry = {
   capital: 'Washington D.C',
   language: 'English',
   population: 331002651,
+
+  describe: function () {
+    return `${this.capital} is the capital of the ${this.country} which has a population of ${this.population}`;
+  },
 };
+
+console.log(myCountry.describe());
 
 // console.log(myCountry);
 
 // LECTURE: Dot vs. Bracket Notation
 
-let countryInfo = `${myCountry.country} capital is ${myCountry.capital}, as of today the ${myCountry.country} has a population of ${myCountry.population}`;
-console.log(countryInfo);
+// let countryInfo = `${myCountry.country} capital is ${myCountry.capital}, as of today the ${myCountry.country} has a population of ${myCountry.population}`;
+// console.log(countryInfo);
 
-myCountry.population = 332002651;
-console.log(myCountry);
+// myCountry.population = 332002651;
+// console.log(myCountry);
 
-myCountry['population'] = 331002651;
-console.log(myCountry);
+// myCountry['population'] = 331002651;
+// console.log(myCountry);
+
+// LECTURE: Object Methods
