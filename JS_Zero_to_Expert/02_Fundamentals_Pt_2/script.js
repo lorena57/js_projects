@@ -71,36 +71,94 @@
 // console.log(yearsUntilRetirementAgain(2000, 'Jane'));
 
 //Arrays
-const friends = ['Michael', 'Steven', 'Peter'];
+// const friends = ['Michael', 'Steven', 'Peter'];
 
-console.log(friends[friends.length - 1]);
+// console.log(friends[friends.length - 1]);
 
-friends[2] = 'Eddie';
+// friends[2] = 'Eddie';
 
-console.log(friends);
+// console.log(friends);
 
-let variousTypes = ['Smith', 27, true];
+// let variousTypes = ['Smith', 27, true];
 
-console.log(variousTypes);
+// console.log(variousTypes);
 
-variousTypes[2] = false;
+// variousTypes[2] = false;
 
-console.log(variousTypes);
+// console.log(variousTypes);
 
-const newFriend = friends.push('Frank');
+// const newFriend = friends.push('Frank');
 
-console.log(friends);
-console.log(newFriend);
+// console.log(friends);
+// console.log(newFriend);
 
-friends.unshift('Nancy');
+// friends.unshift('Nancy');
 
-console.log(friends);
+// console.log(friends);
 
-friends.pop();
-console.log(friends);
+// friends.pop();
+// console.log(friends);
 
-console.log(friends.lastIndexOf('Eddie'));
+// console.log(friends.lastIndexOf('Eddie'));
 
-if (friends.includes('Eddie')) {
-  console.log('I have a friend named Eddie');
-}
+// if (friends.includes('Eddie')) {
+//   console.log('I have a friend named Eddie');
+// }
+
+// const yodaArray = ['Baby Yoda', 2569, 'Master Teacher'];
+
+// const babyYoda = {
+//   name: 'Baby Yoda',
+//   profession: 'Master Teacher',
+//   yearBorn: 2569,
+// };
+
+// console.log(babyYoda);
+
+// const babyYoda = {
+//   name: 'Baby Yoda',
+//   profession: 'Master Teacher',
+//   yearBorn: 2569,
+// };
+
+// console.log(babyYoda.name);
+
+// const interestedIn = prompt(
+//   'What information do you want to know about baby Yoda?'
+// );
+// console.log(babyYoda[interestedIn]);
+
+// babyYoda.shows = 'Mando';
+// babyYoda['favoriteToy'] = 'knob';
+
+// console.log(babyYoda);
+
+const babyYoda = {
+  name: 'Baby Yoda',
+  profession: 'Master Teacher',
+  yearBorn: 3569,
+
+  //   calcAge: function (yearBorn) {
+  //     return yearBorn - 2037;
+  //   },
+
+  //   calcAge: function () {
+  //     return 4096 - this.yearBorn;
+  //   },
+
+  calcAge: function () {
+    this.age = 4096 - this.yearBorn;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.name} is from a galaxy far away.  ${this.name} is a ${
+      this.profession
+    } who has great powers and has lived many years.  ${
+      this.name
+    } is ${this.calcAge()}`;
+  },
+};
+console.log(babyYoda.calcAge());
+console.log(babyYoda.age);
+console.log(babyYoda.getSummary());
