@@ -133,32 +133,36 @@
 
 // console.log(babyYoda);
 
-const babyYoda = {
-  name: 'Baby Yoda',
-  profession: 'Master Teacher',
-  yearBorn: 3569,
+// const babyYoda = {
+//   name: 'Baby Yoda',
+//   profession: 'Master Teacher',
+//   yearBorn: 3569,
 
-  //   calcAge: function (yearBorn) {
-  //     return yearBorn - 2037;
-  //   },
+//   calcAge: function (yearBorn) {
+//     return yearBorn - 2037;
+//   },
 
-  //   calcAge: function () {
-  //     return 4096 - this.yearBorn;
-  //   },
+//   calcAge: function () {
+//     return 4096 - this.yearBorn;
+//   },
 
-  calcAge: function () {
-    this.age = 4096 - this.yearBorn;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 4096 - this.yearBorn;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.name} is from a galaxy far away.  ${this.name} is a ${
-      this.profession
-    } who has great powers and has lived many years.  ${
-      this.name
-    } is ${this.calcAge()}`;
-  },
-};
-console.log(babyYoda.calcAge());
-console.log(babyYoda.age);
-console.log(babyYoda.getSummary());
+//   getSummary: function () {
+//     return `${this.name} is from a galaxy far away.  ${this.name} is a ${
+//       this.profession
+//     } who has great powers and has lived many years.  ${
+//       this.name
+//     } is ${this.calcAge()}`;
+//   },
+// };
+// console.log(babyYoda.calcAge());
+// console.log(babyYoda.age);
+// console.log(babyYoda.getSummary());
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`tsting ${i}`);
+}
