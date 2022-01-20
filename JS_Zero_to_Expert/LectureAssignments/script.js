@@ -109,13 +109,13 @@
 
 // LECTURE: Function Declarations vs. Expressions
 
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-let lies = percentageOfWorld1(33000000000);
+// let lies = percentageOfWorld1(33000000000);
 
-console.log(lies);
+// console.log(lies);
 
 // let anotherOne = function (population) {
 //   return (population / 7900) * 100;
@@ -153,18 +153,18 @@ console.log(lies);
 // console.log(percentages);
 
 // LECTURE: Introduction to Objects
-let myCountry = {
-  country: 'United States',
-  capital: 'Washington D.C',
-  language: 'English',
-  population: 331002651,
+// let myCountry = {
+//   country: 'United States',
+//   capital: 'Washington D.C',
+//   language: 'English',
+//   population: 331002651,
 
-  describe: function () {
-    return `${this.capital} is the capital of the ${this.country} which has a population of ${this.population}`;
-  },
-};
+//   describe: function () {
+//     return `${this.capital} is the capital of the ${this.country} which has a population of ${this.population}`;
+//   },
+// };
 
-console.log(myCountry.describe());
+// console.log(myCountry.describe());
 
 // console.log(myCountry);
 
@@ -180,3 +180,8 @@ console.log(myCountry.describe());
 // console.log(myCountry);
 
 // LECTURE: Object Methods
+
+// LECTURE: Iteration: The for Loop
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting`);
+}
