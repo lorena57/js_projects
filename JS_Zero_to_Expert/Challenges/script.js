@@ -65,12 +65,53 @@
 
 // console.log(checkWinner(dolphinsScore, koalasScore));
 
-function calcTip(bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// let bills = [125, 555, 44];
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// console.log(tips);
+
+const markMillerInfo = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const johnSmithInfo = {
+  firstName: 'John',
+  lastName: 'Smith',
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+if (markMillerInfo.calcBMI() > johnSmithInfo.calcBMI()) {
+  console.log(
+    `Mark Millers BMI ${
+      markMillerInfo.bmi
+    } is higher John Smith's BMI ${johnSmithInfo.calcBMI()}`
+  );
+} else {
+  console.log(
+    `Mark Millers BMI ${markMillerInfo.calcBMI()} is higher John Smith's BMI ${johnSmithInfo.calcBMI()}`
+  );
 }
 
-let bills = [125, 555, 44];
-
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-
-console.log(tips);
+markMillerInfo.calcBMI();
+johnSmithInfo.calcBMI();
+console.log(markMillerInfo.bmi);
+console.log(johnSmithInfo.bmi);
