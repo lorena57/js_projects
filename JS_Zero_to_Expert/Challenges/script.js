@@ -98,16 +98,30 @@ const johnSmithInfo = {
     return this.bmi;
   },
 };
+//Original
+// if (markMillerInfo.calcBMI() > johnSmithInfo.calcBMI()) {
+//   console.log(
+//     `Mark Millers BMI ${
+//       markMillerInfo.bmi
+//     } is higher John Smith's BMI ${johnSmithInfo.calcBMI()}`
+//   );
+// } else if (johnSmithInfo.calcBMI() > markMillerInfo.calcBMI()) {
+//   console.log(
+//     `John Smith's BMI ${johnSmithInfo.calcBMI()} is higher than Mark Millers BMI ${markMillerInfo.calcBMI()}`
+//   );
+// }
 
-if (markMillerInfo.calcBMI() > johnSmithInfo.calcBMI()) {
+markMillerInfo.calcBMI();
+johnSmithInfo.calcBMI();
+
+//Refactored
+if (markMillerInfo.bmi > johnSmithInfo.bmi) {
   console.log(
-    `Mark Millers BMI ${
-      markMillerInfo.bmi
-    } is higher John Smith's BMI ${johnSmithInfo.calcBMI()}`
+    `Mark Millers BMI ${markMillerInfo.bmi} is higher John Smith's BMI ${johnSmithInfo.bmi}`
   );
-} else {
+} else if (johnSmithInfo.bmi > markMillerInfo.bmi) {
   console.log(
-    `Mark Millers BMI ${markMillerInfo.calcBMI()} is higher John Smith's BMI ${johnSmithInfo.calcBMI()}`
+    `John Smith's BMI ${johnSmithInfo.bmi} is higher than Mark Millers BMI ${markMillerInfo.bmi}`
   );
 }
 
