@@ -167,6 +167,41 @@
 //   console.log(`tsting ${i}`);
 // }
 
+// const yodaArray = [
+//   'Baby Yoda',
+//   2569,
+//   'Master Teacher',
+//   ['Stars', 'Planets', 'Plains'],
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < yodaArray.length; i++) {
+//   console.log(yodaArray[i], typeof yodaArray[i]);
+
+//   types.push(typeof yodaArray[i]);
+//   types[i] = typeof yodaArray[i];
+// }
+// console.log(types);
+
+// const years = [1991, 2001, 2011, 2021, 2031];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// for (let i = 0; i < yodaArray.length; i++) {
+//   if (typeof yodaArray[i] !== 'string') continue;
+//   console.log(yodaArray[i], typeof yodaArray[i]);
+// }
+
+// for (let i = 0; i < yodaArray.length; i++) {
+//   if (typeof yodaArray[i] === 'number') break;
+//   console.log(yodaArray[i], typeof yodaArray[i]);
+// }
+
 const yodaArray = [
   'Baby Yoda',
   2569,
@@ -174,30 +209,13 @@ const yodaArray = [
   ['Stars', 'Planets', 'Plains'],
 ];
 
-const types = [];
-
-for (let i = 0; i < yodaArray.length; i++) {
-  console.log(yodaArray[i], typeof yodaArray[i]);
-
-  types.push(typeof yodaArray[i]);
-  //   types[i] = typeof yodaArray[i];
-}
-console.log(types);
-
-const years = [1991, 2001, 2011, 2021, 2031];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2037 - years[i]);
-}
-console.log(ages);
-
-for (let i = 0; i < yodaArray.length; i++) {
-  if (typeof yodaArray[i] !== 'string') continue;
-  console.log(yodaArray[i], typeof yodaArray[i]);
+for (let i = yodaArray.length - 1; i >= 0; i--) {
+  console.log(i, yodaArray[i]);
 }
 
-for (let i = 0; i < yodaArray.length; i++) {
-  if (typeof yodaArray[i] === 'number') break;
-  console.log(yodaArray[i], typeof yodaArray[i]);
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-----Starting exercise ${exercise}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+  }
 }
