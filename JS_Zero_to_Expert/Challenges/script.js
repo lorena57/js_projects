@@ -75,29 +75,29 @@
 
 // console.log(tips);
 
-const markMillerInfo = {
-  firstName: 'Mark',
-  lastName: 'Miller',
-  mass: 78,
-  height: 1.69,
+// const markMillerInfo = {
+//   firstName: 'Mark',
+//   lastName: 'Miller',
+//   mass: 78,
+//   height: 1.69,
 
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-const johnSmithInfo = {
-  firstName: 'John',
-  lastName: 'Smith',
-  mass: 92,
-  height: 1.95,
+// const johnSmithInfo = {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   mass: 92,
+//   height: 1.95,
 
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 //Original
 // if (markMillerInfo.calcBMI() > johnSmithInfo.calcBMI()) {
 //   console.log(
@@ -111,21 +111,37 @@ const johnSmithInfo = {
 //   );
 // }
 
-markMillerInfo.calcBMI();
-johnSmithInfo.calcBMI();
+// markMillerInfo.calcBMI();
+// johnSmithInfo.calcBMI();
 
-//Refactored
-if (markMillerInfo.bmi > johnSmithInfo.bmi) {
-  console.log(
-    `Mark Millers BMI ${markMillerInfo.bmi} is higher John Smith's BMI ${johnSmithInfo.bmi}`
-  );
-} else if (johnSmithInfo.bmi > markMillerInfo.bmi) {
-  console.log(
-    `John Smith's BMI ${johnSmithInfo.bmi} is higher than Mark Millers BMI ${markMillerInfo.bmi}`
-  );
+// //Refactored
+// if (markMillerInfo.bmi > johnSmithInfo.bmi) {
+//   console.log(
+//     `Mark Millers BMI ${markMillerInfo.bmi} is higher John Smith's BMI ${johnSmithInfo.bmi}`
+//   );
+// } else if (johnSmithInfo.bmi > markMillerInfo.bmi) {
+//   console.log(
+//     `John Smith's BMI ${johnSmithInfo.bmi} is higher than Mark Millers BMI ${markMillerInfo.bmi}`
+//   );
+// }
+
+// markMillerInfo.calcBMI();
+// johnSmithInfo.calcBMI();
+// console.log(markMillerInfo.bmi);
+// console.log(johnSmithInfo.bmi);
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+function calcTip(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
 
-markMillerInfo.calcBMI();
-johnSmithInfo.calcBMI();
-console.log(markMillerInfo.bmi);
-console.log(johnSmithInfo.bmi);
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
