@@ -206,3 +206,6 @@
 //     console.log(`Neighbor ${listOfNeighbours[i][y]}`);
 //   }
 // }
+
+// LECTURE: The while Loop
+let populations = [15, 30, 1000, 5000];
