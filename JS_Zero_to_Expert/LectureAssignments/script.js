@@ -159,6 +159,7 @@
 //   language: 'English',
 //   population: 331002651,
 
+// LECTURE: Object Methods
 //   describe: function () {
 //     return `${this.capital} is the capital of the ${this.country} which has a population of ${this.population}`;
 //   },
@@ -179,9 +180,29 @@
 // myCountry['population'] = 331002651;
 // console.log(myCountry);
 
-// LECTURE: Object Methods
-
 // LECTURE: Iteration: The for Loop
-for (let voter = 1; voter <= 50; voter++) {
-  console.log(`Voter number ${voter} is currently voting`);
-}
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting`);
+// }
+
+// LECTURE: Looping Arrays, Breaking and Continuing
+// let populations = [15, 30, 1000, 5000];
+
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
+
+// LECTURE: Looping Backwards and Loops in Loops
+
+// let listOfNeighbours = [
+//   ['Canada', 'Mexico'],
+//   ['Spain'],
+//   ['Norway', 'Sweden', 'Russia'],
+// ];
+
+//First for loop iterates though the arrays, the second loop loops through the arrays individually
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//   for (let y = 0; y < listOfNeighbours[i].length; y++) {
+//     console.log(`Neighbor ${listOfNeighbours[i][y]}`);
+//   }
+// }
