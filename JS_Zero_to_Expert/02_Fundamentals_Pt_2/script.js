@@ -202,20 +202,35 @@
 //   console.log(yodaArray[i], typeof yodaArray[i]);
 // }
 
-const yodaArray = [
-  'Baby Yoda',
-  2569,
-  'Master Teacher',
-  ['Stars', 'Planets', 'Plains'],
-];
+// const yodaArray = [
+//   'Baby Yoda',
+//   2569,
+//   'Master Teacher',
+//   ['Stars', 'Planets', 'Plains'],
+// ];
 
-for (let i = yodaArray.length - 1; i >= 0; i--) {
-  console.log(i, yodaArray[i]);
+// for (let i = yodaArray.length - 1; i >= 0; i--) {
+//   console.log(i, yodaArray[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`-----Starting exercise ${exercise}`);
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+//   }
+// }
+
+// let rep = 1;
+// while (rep <= 9) {
+//   console.log(`Lifting weights repetition ${rep}`);
+//   rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`-----Starting exercise ${exercise}`);
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Lifting weights repetition ${rep}`);
-  }
-}
+console.log(dice);
