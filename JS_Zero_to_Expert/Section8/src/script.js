@@ -25,10 +25,27 @@
 // const firstName = 'Minnie';
 // calcAge(1991);
 
-console.log(me);
-console.log(job);
-console.log(year);
+// TDZ (TEMPORAL DEAD ZONE)
+// console.log(me);
+// console.log(job);
+// console.log(year);
 
-var me = 'Minnie';
-let job = 'Disneyland';
-const year = 2000;
+// var me = 'Minnie';
+// let job = 'Disneyland';
+// const year = 2000;
+
+console.log(addDelc(2, 3));
+
+console.log(addExpr(2, 3));
+
+console.log(addArrow(2, 3));
+
+function addDelc(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+const addArrow = (a, b) => a + b;
