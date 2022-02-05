@@ -83,3 +83,13 @@ calcAgeArrow(1995);
 //   console.log(this);
 // }
 // calcAge(1995);
+
+const minnie = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+
+minnie.calcAge();
