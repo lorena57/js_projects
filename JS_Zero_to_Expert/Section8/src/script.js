@@ -50,12 +50,20 @@
 
 // const addArrow = (a, b) => a + b;
 
-console.log(numProducts);
+// console.log(numProducts);
 
-if (!numProducts) deleteShoppingCart();
+// if (!numProducts) deleteShoppingCart();
 
-var numProducts = 10;
+// var numProducts = 10;
 
-function deleteShoppingCart() {
-  console.log('All products deleted');
-}
+// function deleteShoppingCart() {
+//   console.log('All products deleted');
+// }
+
+// var x = 1;
+// let y = 2;
+// const x = 3;
+
+console.log(this);
+
+const calcAge = function (birthYear) {};
