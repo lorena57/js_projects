@@ -64,6 +64,22 @@
 // let y = 2;
 // const x = 3;
 
-console.log(this);
+// console.log(this);
 
-const calcAge = function (birthYear) {};
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAge(1995);
+
+const calcAgeArrow = (birthYear) => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1995);
+
+// function calcAge(birthYear) {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// }
+// calcAge(1995);
