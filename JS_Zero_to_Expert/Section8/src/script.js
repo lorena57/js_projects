@@ -101,7 +101,11 @@ const minnie = {
     console.log(this);
     console.log(2037 - this.year);
   },
-  greet: () => console.log(`Hey ${this.firstName}`),
+  greet: function () {
+    console.log(`Hey ${this.firstName}`);
+  },
 };
 
 minnie.greet();
+
+minnie.calcAge();
