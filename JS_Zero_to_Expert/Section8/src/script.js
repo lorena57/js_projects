@@ -66,17 +66,17 @@
 
 // console.log(this);
 
-const calcAge = function (birthYear) {
-  console.log(2037 - birthYear);
-  console.log(this);
-};
-calcAge(1995);
+// const calcAge = function (birthYear) {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// };
+// calcAge(1995);
 
-const calcAgeArrow = (birthYear) => {
-  console.log(2037 - birthYear);
-  console.log(this);
-};
-calcAgeArrow(1995);
+// const calcAgeArrow = (birthYear) => {
+//   console.log(2037 - birthYear);
+//   console.log(this);
+// };
+// calcAgeArrow(1995);
 
 // function calcAge(birthYear) {
 //   console.log(2037 - birthYear);
@@ -84,12 +84,24 @@ calcAgeArrow(1995);
 // }
 // calcAge(1995);
 
+// const minnie = {
+//   year: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+// };
+
+// minnie.calcAge();
+
 const minnie = {
-  year: 1991,
+  firstName: 'Minnie',
+  year: 1970,
   calcAge: function () {
     console.log(this);
     console.log(2037 - this.year);
   },
+  greet: () => console.log(`Hey ${this.firstName}`),
 };
 
-minnie.calcAge();
+minnie.greet();
