@@ -94,18 +94,35 @@
 
 // minnie.calcAge();
 
+// const minnie = {
+//   firstName: 'Minnie',
+//   year: 1970,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+//   greet: function () {
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+
+// minnie.greet();
+
+// minnie.calcAge();
+
 const minnie = {
   firstName: 'Minnie',
-  year: 1970,
+  year: 1991,
   calcAge: function () {
-    console.log(this);
     console.log(2037 - this.year);
-  },
-  greet: function () {
-    console.log(`Hey ${this.firstName}`);
+
+    const self = this;
+    const isMillenial = function () {
+      console.log(self);
+      console.log(self.year >= 1981 && self.year <= 1996);
+    };
+    isMillenial();
   },
 };
-
-minnie.greet();
 
 minnie.calcAge();
