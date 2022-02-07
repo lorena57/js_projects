@@ -134,19 +134,25 @@
 
 // minnie.calcAge();
 
-let age = 30;
-let oldAge = age;
-age = 31;
+// let age = 30;
+// let oldAge = age;
+// age = 31;
 
-console.log(age);
-console.log(oldAge);
+// console.log(age);
+// console.log(oldAge);
 
-const me = {
-  name: 'Minnie',
-  age: 67,
-};
+// const me = {
+//   name: 'Minnie',
+//   age: 67,
+// };
 
-const friend = me;
-friend.age = 60;
-console.log('Friend', friend);
-console.log('Me', me);
+// const friend = me;
+// friend.age = 60;
+// console.log('Friend', friend);
+// console.log('Me', me);
+
+let lastName = 'Mouse';
+let oldLastName = lastName;
+lastName = 'Goofy';
+
+console.log(lastName, oldLastName);
