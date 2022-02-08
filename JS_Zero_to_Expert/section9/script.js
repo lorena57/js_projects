@@ -29,3 +29,15 @@ console.log(main, secondary);
 //Receive 2 return values from a function
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
+
+const nested = [1, 2, [4, 5]];
+
+const [i, , j] = nested;
+
+console.log(i, j);
+
+const newlyNested = ['One', 'Two', 'Three', ['Four', 'Five']];
+
+const [a, b, , [c, d]] = newlyNested;
+
+console.log(a, b, c, d);
