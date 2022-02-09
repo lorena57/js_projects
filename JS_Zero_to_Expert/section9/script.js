@@ -42,69 +42,75 @@
 
 // console.log(a, b, c, d);
 
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 14,
-    },
-  },
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 14,
+//     },
+//   },
 
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
-    console.log(
-      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-    );
-  },
-};
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+//     console.log(
+//       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+//     );
+//   },
+// };
 
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via delSole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-});
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via delSole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
 
-const { name, openingHours, categories } = restaurant;
+// const { name, openingHours, categories } = restaurant;
 
 // console.log(name, openingHours, categories);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
 
-console.log(restaurantName, hours, tags);
+// console.log(restaurantName, hours, tags);
 
 // Mutating variables
-let a = 111;
-let b = 222;
-const obj = { a: 23, b: 7, c: 14 };
+// let a = 111;
+// let b = 222;
+// const obj = { a: 23, b: 7, c: 14 };
 
-({ a, b } = obj);
+// ({ a, b } = obj);
 
-console.log(a, b);
-console.log(obj);
+// console.log(a, b);
+// console.log(obj);
 
 //Mutating nested objects
-const {
-  fri: { open: o, close: c },
-} = openingHours;
+// const {
+//   fri: { open: o, close: c },
+// } = openingHours;
 
-console.log(o, c);
+// console.log(o, c);
+
+//spread operator
+const arr = [7, 8, 9];
+
+const newArr = [1, 2, 3, 4, 5, 6, ...arr];
+console.log(newArr);
