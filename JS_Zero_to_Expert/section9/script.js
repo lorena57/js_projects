@@ -79,3 +79,13 @@ const {
 } = restaurant;
 
 console.log(restaurantName, hours, tags);
+
+// Mutating variables
+let a = 111;
+let b = 222;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+
+console.log(a, b);
+console.log(obj);
