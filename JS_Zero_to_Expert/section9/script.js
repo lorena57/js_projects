@@ -133,10 +133,14 @@ console.log(menu);
 
 // Iterables: arrays, strings, maps, sets . NOT OBJECTS
 
-const ingredients = [
-  prompt("Let's make pasta! Ingredient 1"),
-  prompt('Ingredient 2'),
-  prompt('Ingredient 3'),
-];
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1"),
+//   prompt('Ingredient 2'),
+//   prompt('Ingredient 3'),
+// ];
 
-restaurant.orderPasta(...ingredients);
+// restaurant.orderPasta(...ingredients);
+
+//Objects
+const newRestaurant = { foundedIn: 1998, ...restaurant, founfer: 'Guiseppe' };
+console.log(newRestaurant);
