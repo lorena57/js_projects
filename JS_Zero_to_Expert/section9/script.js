@@ -144,3 +144,8 @@ console.log(menu);
 //Objects
 const newRestaurant = { foundedIn: 1998, ...restaurant, founfer: 'Guiseppe' };
 console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurant.name = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
