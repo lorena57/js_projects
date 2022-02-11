@@ -79,6 +79,14 @@ const restaurant = {
   },
 };
 
+//SPREAD, because on the RIGHT side of =
+const arr = [1, 2, ...[3, 4]];
+console.log(arr);
+
+//REST, because on the LEFT side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
 // restaurant.orderDelivery({
 //   time: '22:30',
 //   address: 'Via delSole, 21',
@@ -116,20 +124,20 @@ const restaurant = {
 // console.log(o, c);
 
 //spread operator
-const arr = [7, 8, 9];
+// const arr = [7, 8, 9];
 
-const newArr = [1, 2, 3, 4, 5, 6, ...arr];
-console.log(newArr);
+// const newArr = [1, 2, 3, 4, 5, 6, ...arr];
+// console.log(newArr);
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-console.log(newMenu);
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
 
 //copy array
-const mainMenuCopy = [...restaurant.mainMenu];
+// const mainMenuCopy = [...restaurant.mainMenu];
 
 //join 2 arrays
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log(menu);
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// console.log(menu);
 
 // Iterables: arrays, strings, maps, sets . NOT OBJECTS
 
@@ -142,10 +150,10 @@ console.log(menu);
 // restaurant.orderPasta(...ingredients);
 
 //Objects
-const newRestaurant = { foundedIn: 1998, ...restaurant, founfer: 'Guiseppe' };
-console.log(newRestaurant);
+// const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+// console.log(newRestaurant);
 
-const restaurantCopy = { ...restaurant };
-restaurant.name = 'Ristorante Roma';
-console.log(restaurantCopy.name);
-console.log(restaurant.name);
+// const restaurantCopy = { ...restaurant };
+// restaurant.name = 'Ristorante Roma';
+// console.log(restaurantCopy.name);
+// console.log(restaurant.name);
