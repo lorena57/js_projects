@@ -79,19 +79,23 @@ const restaurant = {
   },
 };
 
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
 //SPREAD, because on the RIGHT side of =
-const arr = [1, 2, ...[3, 4]];
-console.log(arr);
+// const arr = [1, 2, ...[3, 4]];
+// console.log(arr);
 
 //REST, because on the LEFT side of =
-const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+// console.log(a, b, others);
 
-const [pizza, risotto, ...otherFood] = [
-  ...restaurant.mainMenu,
-  ...restaurant.starterMenu,
-];
-console.log(pizza, risotto, otherFood);
+//EXAMPLE of the REST operator
+// const [pizza, risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log(pizza, risotto, otherFood);
 
 // restaurant.orderDelivery({
 //   time: '22:30',
