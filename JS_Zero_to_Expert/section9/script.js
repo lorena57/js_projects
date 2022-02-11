@@ -77,7 +77,14 @@ const restaurant = {
       `Here is your delicious pasta with ${ingred1}, ${ingred2}, and ${ingred3}`
     );
   },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
 };
+
+restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 
 //Destructuring
 
@@ -101,15 +108,15 @@ const restaurant = {
 // console.log(pizza, risotto, otherFood);
 
 // Functions
-const add = function (...numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
-  console.log(sum);
-};
+// const add = function (...numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+//   console.log(sum);
+// };
 
-add(1, 4);
-add(1, 2, 3, 4, 5);
-add(9, 8, 7, 6, 5, 4, 3, 2, 1);
+// add(1, 4);
+// add(1, 2, 3, 4, 5);
+// add(9, 8, 7, 6, 5, 4, 3, 2, 1);
 
 // restaurant.orderDelivery({
 //   time: '22:30',
