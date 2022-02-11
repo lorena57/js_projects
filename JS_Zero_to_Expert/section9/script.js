@@ -79,8 +79,11 @@ const restaurant = {
   },
 };
 
-const { sat, ...weekdays } = restaurant.openingHours;
-console.log(weekdays);
+//Destructuring
+
+//Objects
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
 
 //SPREAD, because on the RIGHT side of =
 // const arr = [1, 2, ...[3, 4]];
@@ -96,6 +99,17 @@ console.log(weekdays);
 //   ...restaurant.starterMenu,
 // ];
 // console.log(pizza, risotto, otherFood);
+
+// Functions
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+
+add(1, 4);
+add(1, 2, 3, 4, 5);
+add(9, 8, 7, 6, 5, 4, 3, 2, 1);
 
 // restaurant.orderDelivery({
 //   time: '22:30',
