@@ -188,3 +188,10 @@ restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 // restaurant.name = 'Ristorante Roma';
 // console.log(restaurantCopy.name);
 // console.log(restaurant.name);
+
+console.log(true || 0);
+console.log(undefined || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
