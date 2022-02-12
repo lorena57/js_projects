@@ -201,3 +201,10 @@ console.log(guests1);
 //&& short circuits when the 1st operator is true, the last value is returned
 console.log(0 && 'Minnie');
 console.log(7 && 'Minnie');
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+// I can use the && statement instead of writing an if statement, like the above
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
