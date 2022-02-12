@@ -189,9 +189,15 @@ restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 // console.log(restaurantCopy.name);
 // console.log(restaurant.name);
 
+//-----OR-----
 console.log(true || 0);
 console.log(undefined || null);
 
 restaurant.numGuests = 23;
 const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests1);
+
+//---AND-----
+//&& short circuits when the 1st operator is true, the last value is returned
+console.log(0 && 'Minnie');
+console.log(7 && 'Minnie');
