@@ -208,3 +208,6 @@ if (restaurant.orderPizza) {
 
 // I can use the && statement instead of writing an if statement, like the above
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+
+const guestsCorrect = restaurant.numGuests ?? 10;
+console.log(guestsCorrect);
