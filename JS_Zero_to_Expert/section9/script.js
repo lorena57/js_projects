@@ -216,6 +216,7 @@
 const rest1 = {
   name: 'Capri',
   numGuests: 20,
+  // numGuests: 0,
 };
 
 const rest2 = {
@@ -227,8 +228,13 @@ const rest2 = {
 // rest1.numGuests = rest1.numGuests || 10;
 // rest2.numGuests = rest2.numGuests || 10;
 
-rest1.numGuests ||= 10;
-rest2.numGuests ||= 10;
+//if it is false it will assign 10
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+//nullish assignment operator (null or undefined)
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
 
 console.log(rest1);
 console.log(rest2);
