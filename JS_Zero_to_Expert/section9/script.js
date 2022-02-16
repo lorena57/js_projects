@@ -236,5 +236,11 @@ const rest2 = {
 rest1.numGuests ??= 10;
 rest2.numGuests ??= 10;
 
+//AND assignment operator
+
+//if it is truthy it will add anonymous, if it is false it will leave it blank
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
 console.log(rest1);
 console.log(rest2);
