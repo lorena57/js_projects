@@ -191,6 +191,15 @@ const game = {
 //Destructure the object to create 2 arrays
 const [players1, players2] = game.players;
 
+//Create an array for just the Gk and then the remaining players
+//Use the REST syntax
 const [gk, ...fieldPlayers] = players1;
 
-console.log(gk, fieldPlayers);
+//Create an array with all the players
+//Use the spread operator
+const allPlayers = [...players1, ...players2];
+
+//Add new players to an array
+//Unpacking the players1 array into the players1Final array and then adding the new players
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
+console.log(players1Final);
