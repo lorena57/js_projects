@@ -191,4 +191,6 @@ const game = {
 //Destructure the object to create 2 arrays
 const [players1, players2] = game.players;
 
-console.log(players1);
+const [gk, ...fieldPlayers] = players1;
+
+console.log(gk, fieldPlayers);
