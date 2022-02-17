@@ -202,4 +202,12 @@ const allPlayers = [...players1, ...players2];
 //Add new players to an array
 //Unpacking the players1 array into the players1Final array and then adding the new players
 const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
-console.log(players1Final);
+
+//Nested Destructure an object
+
+//Change the name of the object
+const {
+  odds: { team1: team1000, x: draw, team2 },
+} = game;
+
+console.log(team1000);
