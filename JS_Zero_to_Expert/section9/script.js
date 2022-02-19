@@ -42,49 +42,49 @@
 
 // console.log(a, b, c, d);
 
-// const restaurant = {
-//   name: 'Classico Italiano',
-//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
-//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-//   openingHours: {
-//     thu: {
-//       open: 12,
-//       close: 22,
-//     },
-//     fri: {
-//       open: 11,
-//       close: 23,
-//     },
-//     sat: {
-//       open: 0,
-//       close: 14,
-//     },
-//   },
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0,
+      close: 14,
+    },
+  },
 
-//   order: function (starterIndex, mainIndex) {
-//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-//   },
-//   orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
-//     console.log(
-//       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-//     );
-//   },
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
 
-//   orderPasta: function (ingred1, ingred2, ingred3) {
-//     console.log(
-//       `Here is your delicious pasta with ${ingred1}, ${ingred2}, and ${ingred3}`
-//     );
-//   },
+  orderPasta: function (ingred1, ingred2, ingred3) {
+    console.log(
+      `Here is your delicious pasta with ${ingred1}, ${ingred2}, and ${ingred3}`
+    );
+  },
 
-//   orderPizza: function (mainIngredient, ...otherIngredients) {
-//     console.log(mainIngredient);
-//     console.log(otherIngredients);
-//   },
-// };
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+};
 
-// restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 
 //Destructuring
 
@@ -213,16 +213,16 @@
 // const guestsCorrect = restaurant.numGuests ?? 10;
 // console.log(guestsCorrect);
 
-const rest1 = {
-  name: 'Capri',
-  numGuests: 20,
-  // numGuests: 0,
-};
+// const rest1 = {
+//   name: 'Capri',
+//   numGuests: 20,
+//   // numGuests: 0,
+// };
 
-const rest2 = {
-  name: 'Da Resturant',
-  owner: 'Mike',
-};
+// const rest2 = {
+//   name: 'Da Resturant',
+//   owner: 'Mike',
+// };
 
 //OR assignment operator
 // rest1.numGuests = rest1.numGuests || 10;
@@ -233,14 +233,18 @@ const rest2 = {
 // rest2.numGuests ||= 10;
 
 //nullish assignment operator (null or undefined)
-rest1.numGuests ??= 10;
-rest2.numGuests ??= 10;
+// rest1.numGuests ??= 10;
+// rest2.numGuests ??= 10;
 
 //AND assignment operator
 
 //if it is truthy it will add anonymous, if it is false it will leave it blank
-rest1.owner &&= '<ANONYMOUS>';
-rest2.owner &&= '<ANONYMOUS>';
+// rest1.owner &&= '<ANONYMOUS>';
+// rest2.owner &&= '<ANONYMOUS>';
 
-console.log(rest1);
-console.log(rest2);
+// console.log(rest1);
+// console.log(rest2);
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) console.log(item);
