@@ -42,6 +42,11 @@
 
 // console.log(a, b, c, d);
 
+const specialty = {
+  Italian: 'Pizza',
+  American: 'Hot Dogs',
+};
+
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -82,9 +87,12 @@ const restaurant = {
     console.log(mainIngredient);
     console.log(otherIngredients);
   },
+  specialty,
 };
 
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+
+restaurant.specialty;
 
 //Destructuring
 
@@ -245,10 +253,10 @@ restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 // console.log(rest1);
 // console.log(rest2);
 
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
-for (const item of menu) console.log(item);
+// for (const item of menu) console.log(item);
 
-for (const [i, el] of menu.entries()) {
-  console.log(`${i + 1}: ${el}`);
-}
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1}: ${el}`);
+// }
