@@ -42,6 +42,8 @@
 
 // console.log(a, b, c, d);
 
+//Enhanced object literal
+//You can call the object inside the restaurant object
 const specialty = {
   Italian: 'Pizza',
   American: 'Hot Dogs',
