@@ -96,6 +96,10 @@ restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 
 restaurant.specialty;
 
+//Optional Chaining
+//If anything before the ? exists ('mon') then the open property will be read and if it doesn't exist undefined will come up
+console.log(restaurant.openingHours.mon?.open);
+
 //Destructuring
 
 //Objects
