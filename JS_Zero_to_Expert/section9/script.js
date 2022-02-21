@@ -267,6 +267,11 @@ console.log(restaurant.openingHours.mon?.open);
 //   console.log(`${i + 1}: ${el}`);
 // }
 
-//Methods
+//Optional Chaining
 
+//Methods
 console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+
+//Arrays
+const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
+console.log(users[0]?.name ?? 'The user array is empty');
