@@ -266,3 +266,7 @@ console.log(restaurant.openingHours.mon?.open);
 // for (const [i, el] of menu.entries()) {
 //   console.log(`${i + 1}: ${el}`);
 // }
+
+//Methods
+
+console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
