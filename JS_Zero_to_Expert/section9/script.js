@@ -290,6 +290,8 @@ const openingHours = {
   },
 };
 
+// Loop through Property Names
+
 const properties = Object.keys(openingHours);
 console.log(properties);
 
@@ -303,3 +305,14 @@ for (const day of properties) {
   openStr += `${day},`;
 }
 console.log(openStr);
+
+// Loop through Property Values
+const values = Object.values(openingHours);
+console.log(values);
+
+//Entire object
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+for (const [key, { open, close }] of entries)
+  console.log(`On ${key} we open as ${open} and close at ${close}`);
