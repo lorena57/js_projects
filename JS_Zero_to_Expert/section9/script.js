@@ -270,8 +270,26 @@ console.log(restaurant.openingHours.mon?.open);
 //Optional Chaining
 
 //Methods
-console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+// console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
 
 //Arrays
-const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
-console.log(users[0]?.name ?? 'The user array is empty');
+// const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
+// console.log(users[0]?.name ?? 'The user array is empty');
+
+const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
+
+const openingHours = {
+  [weekdays[3]]: { open: 12, close: 22 },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0,
+    close: 24,
+  },
+};
+
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
