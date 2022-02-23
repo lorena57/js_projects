@@ -276,35 +276,35 @@ console.log(restaurant.openingHours.mon?.open);
 // const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
 // console.log(users[0]?.name ?? 'The user array is empty');
 
-const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
+// const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
 
-const openingHours = {
-  [weekdays[3]]: { open: 12, close: 22 },
-  [weekdays[4]]: {
-    open: 11,
-    close: 23,
-  },
-  [weekdays[5]]: {
-    open: 0,
-    close: 24,
-  },
-};
+// const openingHours = {
+//   [weekdays[3]]: { open: 12, close: 22 },
+//   [weekdays[4]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [weekdays[5]]: {
+//     open: 0,
+//     close: 24,
+//   },
+// };
 
 // Loop through Property Names
 
-const properties = Object.keys(openingHours);
-console.log(properties);
+// const properties = Object.keys(openingHours);
+// console.log(properties);
 
-let openStr = `We are open on ${properties.length} days: `;
+// let openStr = `We are open on ${properties.length} days: `;
 
 // for (const day of Object.keys(openingHours)) {
 //   console.log(day);
 // }
 
-for (const day of properties) {
-  openStr += `${day},`;
-}
-console.log(openStr);
+// for (const day of properties) {
+//   openStr += `${day},`;
+// }
+// console.log(openStr);
 
 // Loop through Property Values
 // const values = Object.values(openingHours);
@@ -317,20 +317,21 @@ console.log(openStr);
 // for (const [key, { open, close }] of entries)
 //   console.log(`On ${key} we open as ${open} and close at ${close}`);
 
-const toDo = {
-  Monday: 'Study',
-  Tuesday: 'Read',
-  Wednesday: 'Notes',
-  Thursday: 'Cram',
-  Friday: 'Pray',
-  Weekend: ['Chow down', 'Drink', 'Sleep'],
-};
+//Object Iteration
+// const toDo = {
+//   Monday: 'Study',
+//   Tuesday: 'Read',
+//   Wednesday: 'Notes',
+//   Thursday: 'Cram',
+//   Friday: 'Pray',
+//   Weekend: ['Chow down', 'Drink', 'Sleep'],
+// };
 
-const values = Object.values(toDo);
-console.log(values);
+// const values = Object.values(toDo);
+// console.log(values);
 
-const testing = Object.entries(toDo);
-console.log(testing);
+// const testing = Object.entries(toDo);
+// console.log(testing);
 
-for (const [key, activity] of testing)
-  console.log(`On ${key} I need to ${activity}`);
+// for (const [key, activity] of testing)
+//   console.log(`On ${key} I need to ${activity}`);
