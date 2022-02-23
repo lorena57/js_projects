@@ -307,12 +307,30 @@ for (const day of properties) {
 console.log(openStr);
 
 // Loop through Property Values
-const values = Object.values(openingHours);
-console.log(values);
+// const values = Object.values(openingHours);
+// console.log(values);
 
 //Entire object
-const entries = Object.entries(openingHours);
-console.log(entries);
+// const entries = Object.entries(openingHours);
+// console.log(entries);
 
-for (const [key, { open, close }] of entries)
-  console.log(`On ${key} we open as ${open} and close at ${close}`);
+// for (const [key, { open, close }] of entries)
+//   console.log(`On ${key} we open as ${open} and close at ${close}`);
+
+const toDo = {
+  Monday: 'Study',
+  Tuesday: 'Read',
+  Wednesday: 'Notes',
+  Thursday: 'Cram',
+  Friday: 'Pray',
+  Weekend: ['Chow down', 'Drink', 'Sleep'],
+};
+
+const values = Object.values(toDo);
+console.log(values);
+
+const testing = Object.entries(toDo);
+console.log(testing);
+
+for (const [key, activity] of testing)
+  console.log(`On ${key} I need to ${activity}`);
