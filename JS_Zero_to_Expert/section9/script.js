@@ -335,3 +335,18 @@ console.log(restaurant.openingHours.mon?.open);
 
 // for (const [key, activity] of testing)
 //   console.log(`On ${key} I need to ${activity}`);
+
+//Sets
+//Sets are iterable
+const orderSet = new Set([
+  'Pizza',
+  'Pasta',
+  'Calzone',
+  'Garlic Bread',
+  'Pasta',
+  'Calzone',
+]);
+
+console.log(orderSet);
+
+console.log(new Set('Minnie'));
