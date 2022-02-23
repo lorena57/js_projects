@@ -347,6 +347,24 @@ const orderSet = new Set([
   'Calzone',
 ]);
 
+orderSet.add('Meatballs');
+orderSet.delete('Pasta');
+// orderSet.clear();
 console.log(orderSet);
+console.log(orderSet.size);
+console.log(orderSet.has('Calzone'));
+console.log(orderSet.has('Meatballs'));
+
+for (const order of orderSet)
+  console.log(
+    `I can't decide what to choose from the menu, which should I choose ${order}?`
+  );
 
 console.log(new Set('Minnie'));
+
+const staff = ['Waiter', 'Chef', 'Manager', 'Waiter', 'Chef'];
+
+//use the spread operator to create a new array
+const uniqueStaff = [...new Set(staff)];
+
+console.log(uniqueStaff);
