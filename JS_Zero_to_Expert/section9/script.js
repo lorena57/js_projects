@@ -398,3 +398,8 @@ console.log(rest.size);
 
 //To clear out all the contents of a map
 // rest.clear()
+
+const arr = [1, 2];
+rest.set(arr, 'Test');
+
+console.log(rest.get(arr));
