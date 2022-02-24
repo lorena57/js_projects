@@ -374,3 +374,10 @@ rest.set('name', 'Classico Italiano');
 rest.set(1, 'Fireenze, Italy');
 rest.set(2, 'Lisbon, Portugal');
 console.log(rest);
+
+//sets can be chained
+rest
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23);
+console.log(rest);
