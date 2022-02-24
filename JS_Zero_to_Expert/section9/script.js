@@ -368,3 +368,9 @@ console.log(restaurant.openingHours.mon?.open);
 // const uniqueStaff = [...new Set(staff)];
 
 // console.log(uniqueStaff);
+
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Fireenze, Italy');
+rest.set(2, 'Lisbon, Portugal');
+console.log(rest);
