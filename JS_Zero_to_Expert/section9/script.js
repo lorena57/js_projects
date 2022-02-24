@@ -379,5 +379,22 @@ console.log(rest);
 rest
   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
   .set('open', 11)
-  .set('close', 23);
-console.log(rest);
+  .set('close', 23)
+  .set(true, 'We are open')
+  .set(false, 'We are closed');
+
+//To get the key you use 'get'
+console.log(rest.get('name'));
+
+const time = 21;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+//to see if a map has a key
+console.log(rest.has('categories'));
+//to delete
+rest.delete(2);
+//how many items 'keys'
+console.log(rest.size);
+
+//To clear out all the contents of a map
+// rest.clear()
