@@ -338,33 +338,33 @@ console.log(restaurant.openingHours.mon?.open);
 
 //Sets
 //Sets are iterable
-const orderSet = new Set([
-  'Pizza',
-  'Pasta',
-  'Calzone',
-  'Garlic Bread',
-  'Pasta',
-  'Calzone',
-]);
+// const orderSet = new Set([
+//   'Pizza',
+//   'Pasta',
+//   'Calzone',
+//   'Garlic Bread',
+//   'Pasta',
+//   'Calzone',
+// ]);
 
-orderSet.add('Meatballs');
-orderSet.delete('Pasta');
+// orderSet.add('Meatballs');
+// orderSet.delete('Pasta');
 // orderSet.clear();
-console.log(orderSet);
-console.log(orderSet.size);
-console.log(orderSet.has('Calzone'));
-console.log(orderSet.has('Meatballs'));
+// console.log(orderSet);
+// console.log(orderSet.size);
+// console.log(orderSet.has('Calzone'));
+// console.log(orderSet.has('Meatballs'));
 
-for (const order of orderSet)
-  console.log(
-    `I can't decide what to choose from the menu, which should I choose ${order}?`
-  );
+// for (const order of orderSet)
+//   console.log(
+//     `I can't decide what to choose from the menu, which should I choose ${order}?`
+//   );
 
-console.log(new Set('Minnie'));
+// console.log(new Set('Minnie'));
 
-const staff = ['Waiter', 'Chef', 'Manager', 'Waiter', 'Chef'];
+// const staff = ['Waiter', 'Chef', 'Manager', 'Waiter', 'Chef'];
 
 //use the spread operator to create a new array
-const uniqueStaff = [...new Set(staff)];
+// const uniqueStaff = [...new Set(staff)];
 
-console.log(uniqueStaff);
+// console.log(uniqueStaff);
