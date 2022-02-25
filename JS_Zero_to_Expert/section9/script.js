@@ -276,19 +276,19 @@ console.log(restaurant.openingHours.mon?.open);
 // const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
 // console.log(users[0]?.name ?? 'The user array is empty');
 
-// const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
+const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
 
-// const openingHours = {
-//   [weekdays[3]]: { open: 12, close: 22 },
-//   [weekdays[4]]: {
-//     open: 11,
-//     close: 23,
-//   },
-//   [weekdays[5]]: {
-//     open: 0,
-//     close: 24,
-//   },
-// };
+const openingHours = {
+  [weekdays[3]]: { open: 12, close: 22 },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0,
+    close: 24,
+  },
+};
 
 // Loop through Property Names
 
@@ -415,3 +415,20 @@ const question = new Map([
 ]);
 
 console.log(question);
+
+//Convert object to map
+console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+
+console.log(question.get('question'));
+
+//Quiz question
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+}
+
+const answer = Number(prompt('Your answer'));
+console.log(answer);
+
+console.log(question.get(question.get('correct') === answer));
