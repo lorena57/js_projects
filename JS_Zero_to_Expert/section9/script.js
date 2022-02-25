@@ -403,3 +403,15 @@ const arr = [1, 2];
 rest.set(arr, 'Test');
 
 console.log(rest.get(arr));
+
+const question = new Map([
+  ['question', 'What is the best programming language?'],
+  [1, 'C'],
+  [2, 'Jave'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct'],
+  [false, 'Try again'],
+]);
+
+console.log(question);
