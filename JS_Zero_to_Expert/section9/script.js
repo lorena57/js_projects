@@ -447,3 +447,7 @@ const newMap = new Map([
 ]);
 
 console.log(newMap);
+
+console.log([...newMap]);
+
+console.log(newMap.values());
