@@ -439,3 +439,11 @@ console.log([...question]);
 console.log(question.entries());
 console.log(question.keys());
 console.log(question.values());
+
+const newMap = new Map([
+  [1, 'JavaScript'],
+  [2, 'HTML'],
+  [3, 'CSS'],
+]);
+
+console.log(newMap);
