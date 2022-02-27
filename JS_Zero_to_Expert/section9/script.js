@@ -453,6 +453,7 @@ console.log([...newMap]);
 console.log(newMap.values());
 
 //Arrays vs Sets
+
 //Arrays
 // Use when need ordered list of values
 //Use then you need to manipulate data
@@ -461,3 +462,18 @@ console.log(newMap.values());
 //When you need to work with unique values
 //Use when high-performance is really important
 //Use to move duplicate from arrays
+
+//Objects vs Maps
+//Objects
+//More traditional key/value store
+//Easier to write and access values with . and []
+//Use when you need to include functions (methods)
+//Use when working with JSON (can convert to map)
+
+//Maps
+//Better performance
+//Keys can have any data type
+// Easy to iterate
+// Easy to compute size
+//Use when you simply need to map key to values
+//Use when you need keys that are not strings
