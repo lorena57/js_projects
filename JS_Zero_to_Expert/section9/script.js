@@ -451,3 +451,13 @@ console.log(newMap);
 console.log([...newMap]);
 
 console.log(newMap.values());
+
+//Arrays vs Sets
+//Arrays
+// Use when need ordered list of values
+//Use then you need to manipulate data
+
+//Sets
+//When you need to work with unique values
+//Use when high-performance is really important
+//Use to move duplicate from arrays
