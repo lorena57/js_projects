@@ -491,3 +491,16 @@ console.log(catchPhrase.slice(0, 10));
 
 //It gets the first word of a string
 console.log(catchPhrase.slice(0, catchPhrase.indexOf(' ')));
+//It gets the last word of a string and the 1 removes the space
+console.log(catchPhrase.slice(catchPhrase.lastIndexOf(' ') + 1));
+
+const checkMiddleSeat = function (seat) {
+  //B & E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') console.log('You got the middle seat');
+  else console.log('You got lucky');
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
