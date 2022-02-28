@@ -478,8 +478,13 @@
 //Use when you simply need to map key to values
 //Use when you need keys that are not strings
 
+//Strings
+//Strings cannot be mutated, if so you need to save it to a new variable
 const catchPhrase = 'Women Who Code';
 
 const starterLanguage = 'JavaScript';
 
-console.log(catchPhrase.slice(7));
+//5 is the begin parameter
+console.log(catchPhrase.slice(5));
+console.log(catchPhrase.slice(0, 10));
+// console.log(starterLanguage.indexOf('S'));
