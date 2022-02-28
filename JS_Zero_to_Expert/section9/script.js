@@ -488,3 +488,6 @@ const starterLanguage = 'JavaScript';
 console.log(catchPhrase.slice(5));
 console.log(catchPhrase.slice(0, 10));
 // console.log(starterLanguage.indexOf('S'));
+
+//It gets the first word of a string
+console.log(catchPhrase.slice(0, catchPhrase.indexOf(' ')));
