@@ -477,3 +477,7 @@ console.log(newMap.values());
 // Easy to compute size
 //Use when you simply need to map key to values
 //Use when you need keys that are not strings
+
+const catchPhrase = 'Women Who Code';
+
+const starterLanguage = 'JavaScript';
