@@ -44,61 +44,61 @@
 
 //Enhanced object literal
 //You can call the object inside the restaurant object
-const specialty = {
-  Italian: 'Pizza',
-  American: 'Hot Dogs',
-};
+// const specialty = {
+//   Italian: 'Pizza',
+//   American: 'Hot Dogs',
+// };
 
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 14,
-    },
-  },
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 14,
+//     },
+//   },
 
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
-    console.log(
-      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-    );
-  },
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+//     console.log(
+//       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+//     );
+//   },
 
-  orderPasta: function (ingred1, ingred2, ingred3) {
-    console.log(
-      `Here is your delicious pasta with ${ingred1}, ${ingred2}, and ${ingred3}`
-    );
-  },
+//   orderPasta: function (ingred1, ingred2, ingred3) {
+//     console.log(
+//       `Here is your delicious pasta with ${ingred1}, ${ingred2}, and ${ingred3}`
+//     );
+//   },
 
-  orderPizza: function (mainIngredient, ...otherIngredients) {
-    console.log(mainIngredient);
-    console.log(otherIngredients);
-  },
-  specialty,
-};
+//   orderPizza: function (mainIngredient, ...otherIngredients) {
+//     console.log(mainIngredient);
+//     console.log(otherIngredients);
+//   },
+//   specialty,
+// };
 
-restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+// restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 
-restaurant.specialty;
+// restaurant.specialty;
 
 //Optional Chaining
 //If anything before the ? exists ('mon') then the open property will be read and if it doesn't exist undefined will come up
-console.log(restaurant.openingHours.mon?.open);
+// console.log(restaurant.openingHours.mon?.open);
 
 //Destructuring
 
@@ -276,19 +276,19 @@ console.log(restaurant.openingHours.mon?.open);
 // const users = [{ name: 'Minnie', email: 'minnie@disney.com' }];
 // console.log(users[0]?.name ?? 'The user array is empty');
 
-const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
+// const weekdays = ['mon', 'tue', 'wed', 'thru', 'fri', 'sat', 'sun'];
 
-const openingHours = {
-  [weekdays[3]]: { open: 12, close: 22 },
-  [weekdays[4]]: {
-    open: 11,
-    close: 23,
-  },
-  [weekdays[5]]: {
-    open: 0,
-    close: 24,
-  },
-};
+// const openingHours = {
+//   [weekdays[3]]: { open: 12, close: 22 },
+//   [weekdays[4]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [weekdays[5]]: {
+//     open: 0,
+//     close: 24,
+//   },
+// };
 
 // Loop through Property Names
 
@@ -369,88 +369,88 @@ const openingHours = {
 
 // console.log(uniqueStaff);
 
-const rest = new Map();
-rest.set('name', 'Classico Italiano');
-rest.set(1, 'Fireenze, Italy');
-rest.set(2, 'Lisbon, Portugal');
-console.log(rest);
+// const rest = new Map();
+// rest.set('name', 'Classico Italiano');
+// rest.set(1, 'Fireenze, Italy');
+// rest.set(2, 'Lisbon, Portugal');
+// console.log(rest);
 
 //sets can be chained
-rest
-  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
-  .set('open', 11)
-  .set('close', 23)
-  .set(true, 'We are open')
-  .set(false, 'We are closed');
+// rest
+//   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+//   .set('open', 11)
+//   .set('close', 23)
+//   .set(true, 'We are open')
+//   .set(false, 'We are closed');
 
 //To get the key you use 'get'
-console.log(rest.get('name'));
+// console.log(rest.get('name'));
 
-const time = 21;
-console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+// const time = 21;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 
 //to see if a map has a key
-console.log(rest.has('categories'));
+// console.log(rest.has('categories'));
 //to delete
-rest.delete(2);
+// rest.delete(2);
 //how many items 'keys'
-console.log(rest.size);
+// console.log(rest.size);
 
 //To clear out all the contents of a map
 // rest.clear()
 
-const arr = [1, 2];
-rest.set(arr, 'Test');
+// const arr = [1, 2];
+// rest.set(arr, 'Test');
 
-console.log(rest.get(arr));
+// console.log(rest.get(arr));
 
-const question = new Map([
-  ['question', 'What is the best programming language?'],
-  [1, 'C'],
-  [2, 'Jave'],
-  [3, 'JavaScript'],
-  ['correct', 3],
-  [true, 'Correct'],
-  [false, 'Try again'],
-]);
+// const question = new Map([
+//   ['question', 'What is the best programming language?'],
+//   [1, 'C'],
+//   [2, 'Jave'],
+//   [3, 'JavaScript'],
+//   ['correct', 3],
+//   [true, 'Correct'],
+//   [false, 'Try again'],
+// ]);
 
-console.log(question);
+// console.log(question);
 
 //Convert object to map
-console.log(Object.entries(openingHours));
-const hoursMap = new Map(Object.entries(openingHours));
-console.log(hoursMap);
+// console.log(Object.entries(openingHours));
+// const hoursMap = new Map(Object.entries(openingHours));
+// console.log(hoursMap);
 
-console.log(question.get('question'));
+// console.log(question.get('question'));
 
 //Quiz question
-for (const [key, value] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
-}
+// for (const [key, value] of question) {
+//   if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+// }
 
 // const answer = Number(prompt('Your answer'));
-const answer = 3;
-console.log(answer);
+// const answer = 3;
+// console.log(answer);
 
-console.log(question.get(question.get('correct') === answer));
+// console.log(question.get(question.get('correct') === answer));
 
 //Convert map to array
-console.log([...question]);
-console.log(question.entries());
-console.log(question.keys());
-console.log(question.values());
+// console.log([...question]);
+// console.log(question.entries());
+// console.log(question.keys());
+// console.log(question.values());
 
-const newMap = new Map([
-  [1, 'JavaScript'],
-  [2, 'HTML'],
-  [3, 'CSS'],
-]);
+// const newMap = new Map([
+//   [1, 'JavaScript'],
+//   [2, 'HTML'],
+//   [3, 'CSS'],
+// ]);
 
-console.log(newMap);
+// console.log(newMap);
 
-console.log([...newMap]);
+// console.log([...newMap]);
 
-console.log(newMap.values());
+// console.log(newMap.values());
 
 //Arrays vs Sets
 
@@ -481,3 +481,5 @@ console.log(newMap.values());
 const catchPhrase = 'Women Who Code';
 
 const starterLanguage = 'JavaScript';
+
+console.log(catchPhrase.slice(7));
