@@ -544,3 +544,25 @@ const announcement =
 console.log(priceUS);
 
 console.log(announcement.replaceAll('door', 'gate'));
+
+//Booleans
+
+const plane = 'A320neo';
+
+//Includes, startsWith is case sensitive
+console.log(plane.includes('A320'));
+console.log(plane.startsWith('A'));
+console.log(plane.endsWith('neo'));
+
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are not allowed on board');
+  } else {
+    console.log('Welcome aboard');
+  }
+};
+
+checkBaggage('I have a laptop, some Food and a pocket knife');
+checkBaggage('Socks and Underwear');
+checkBaggage('Snacks and magazines and a gun');
