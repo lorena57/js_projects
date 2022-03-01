@@ -508,11 +508,26 @@ const starterLanguage = 'JavaScript';
 console.log(catchPhrase.toUpperCase());
 console.log(catchPhrase.toLowerCase());
 
+//Fix capitalization on a name
 const character = 'MInnie';
-
 console.log(character);
 const characterLowerCase = character.toLowerCase();
 console.log(characterLowerCase);
 const characterCorrect =
   characterLowerCase[0].toUpperCase() + characterLowerCase.slice(1);
 console.log(characterCorrect);
+
+const email = 'hello@minnie.com';
+const emailLogin = '     HelloMinnie.com \n';
+
+console.log(emailLogin);
+
+//cleaning up the email, multiple steps
+const lowerEmail = emailLogin.toLowerCase();
+console.log(lowerEmail);
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+//Simplify the cleanup instead of doing the above
+const normalizedEmail = emailLogin.toLowerCase().trim();
+console.log(normalizedEmail);
