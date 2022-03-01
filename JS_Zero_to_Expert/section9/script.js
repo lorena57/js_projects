@@ -518,7 +518,7 @@ const characterCorrect =
 console.log(characterCorrect);
 
 const email = 'hello@minnie.com';
-const emailLogin = '     HelloMinnie.com \n';
+const emailLogin = '     Hello@Minnie.com \n';
 
 console.log(emailLogin);
 
@@ -531,3 +531,16 @@ console.log(trimmedEmail);
 //Simplify the cleanup instead of doing the above
 const normalizedEmail = emailLogin.toLowerCase().trim();
 console.log(normalizedEmail);
+
+console.log(email === normalizedEmail);
+
+//replacing
+const priceGB = '1500,E';
+const priceUS = priceGB.replace('E', '$').replace(',', '.');
+
+const announcement =
+  'All passengers come to the boarding door 23. Boarding door 23!';
+
+console.log(priceUS);
+
+console.log(announcement.replaceAll('door', 'gate'));
