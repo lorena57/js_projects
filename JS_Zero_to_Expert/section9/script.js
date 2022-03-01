@@ -504,3 +504,15 @@ const starterLanguage = 'JavaScript';
 // checkMiddleSeat('11B');
 // checkMiddleSeat('23C');
 // checkMiddleSeat('3E');
+
+console.log(catchPhrase.toUpperCase());
+console.log(catchPhrase.toLowerCase());
+
+const character = 'MInnie';
+
+console.log(character);
+const characterLowerCase = character.toLowerCase();
+console.log(characterLowerCase);
+const characterCorrect =
+  characterLowerCase[0].toUpperCase() + characterLowerCase.slice(1);
+console.log(characterCorrect);
