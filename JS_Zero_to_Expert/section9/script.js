@@ -567,7 +567,17 @@
 // checkBaggage('Socks and Underwear');
 // checkBaggage('Snacks and magazines and a gun');
 
+//Split
 const addSpaces = 'Let me move to another seat';
 const revisedAddSpaces = addSpaces.split(' ');
 
 console.log(revisedAddSpaces);
+
+const [firstName, lastName] = 'Minnie Mouse'.split(' ');
+
+console.log(firstName);
+
+//Joining the items
+const testing = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+
+console.log(testing);
