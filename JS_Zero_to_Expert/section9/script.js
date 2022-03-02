@@ -610,14 +610,25 @@
 // capitalizeName('mickey mouse');
 
 //Padding
-const message = 'Go to gate 23!';
-console.log(message.padStart(25, '+').padEnd(35, '+'));
+// const message = 'Go to gate 23!';
+// console.log(message.padStart(25, '+').padEnd(35, '+'));
 
-const maskCreditCard = function (number) {
-  const str = number + '';
-  const last = str.slice(-4);
-  return last.padStart(str.length, '*');
+// const maskCreditCard = function (number) {
+//   const str = number + '';
+//   const last = str.slice(-4);
+//   return last.padStart(str.length, '*');
+// };
+
+// console.log(maskCreditCard(1236584841635946));
+// console.log(maskCreditCard('156986515634897986541'));
+
+//Repeat
+const messageRepeat = 'Bad weather..All departures delayed.';
+
+console.log(messageRepeat.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'space'.repeat(n)}`);
 };
 
-console.log(maskCreditCard(1236584841635946));
-console.log(maskCreditCard('156986515634897986541'));
+planesInLine(10);
