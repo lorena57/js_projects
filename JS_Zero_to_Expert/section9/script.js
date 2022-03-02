@@ -480,9 +480,9 @@
 
 //Strings
 //Strings cannot be mutated, if so you need to save it to a new variable
-const catchPhrase = 'Women Who Code';
+// const catchPhrase = 'Women Who Code';
 
-const starterLanguage = 'JavaScript';
+// const starterLanguage = 'JavaScript';
 
 //5 is the begin parameter
 // console.log(catchPhrase.slice(5));
@@ -505,64 +505,64 @@ const starterLanguage = 'JavaScript';
 // checkMiddleSeat('23C');
 // checkMiddleSeat('3E');
 
-console.log(catchPhrase.toUpperCase());
-console.log(catchPhrase.toLowerCase());
+// console.log(catchPhrase.toUpperCase());
+// console.log(catchPhrase.toLowerCase());
 
 //Fix capitalization on a name
-const character = 'MInnie';
-console.log(character);
-const characterLowerCase = character.toLowerCase();
-console.log(characterLowerCase);
-const characterCorrect =
-  characterLowerCase[0].toUpperCase() + characterLowerCase.slice(1);
-console.log(characterCorrect);
+// const character = 'MInnie';
+// console.log(character);
+// const characterLowerCase = character.toLowerCase();
+// console.log(characterLowerCase);
+// const characterCorrect =
+//   characterLowerCase[0].toUpperCase() + characterLowerCase.slice(1);
+// console.log(characterCorrect);
 
-const email = 'hello@minnie.com';
-const emailLogin = '     Hello@Minnie.com \n';
+// const email = 'hello@minnie.com';
+// const emailLogin = '     Hello@Minnie.com \n';
 
-console.log(emailLogin);
+// console.log(emailLogin);
 
 //cleaning up the email, multiple steps
-const lowerEmail = emailLogin.toLowerCase();
-console.log(lowerEmail);
-const trimmedEmail = lowerEmail.trim();
-console.log(trimmedEmail);
+// const lowerEmail = emailLogin.toLowerCase();
+// console.log(lowerEmail);
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
 
 //Simplify the cleanup instead of doing the above
-const normalizedEmail = emailLogin.toLowerCase().trim();
-console.log(normalizedEmail);
+// const normalizedEmail = emailLogin.toLowerCase().trim();
+// console.log(normalizedEmail);
 
-console.log(email === normalizedEmail);
+// console.log(email === normalizedEmail);
 
 //replacing
-const priceGB = '1500,E';
-const priceUS = priceGB.replace('E', '$').replace(',', '.');
+// const priceGB = '1500,E';
+// const priceUS = priceGB.replace('E', '$').replace(',', '.');
 
-const announcement =
-  'All passengers come to the boarding door 23. Boarding door 23!';
+// const announcement =
+//   'All passengers come to the boarding door 23. Boarding door 23!';
 
-console.log(priceUS);
+// console.log(priceUS);
 
-console.log(announcement.replaceAll('door', 'gate'));
+// console.log(announcement.replaceAll('door', 'gate'));
 
 //Booleans
 
-const plane = 'A320neo';
+// const plane = 'A320neo';
 
 //Includes, startsWith is case sensitive
-console.log(plane.includes('A320'));
-console.log(plane.startsWith('A'));
-console.log(plane.endsWith('neo'));
+// console.log(plane.includes('A320'));
+// console.log(plane.startsWith('A'));
+// console.log(plane.endsWith('neo'));
 
-const checkBaggage = function (items) {
-  const baggage = items.toLowerCase();
-  if (baggage.includes('knife') || baggage.includes('gun')) {
-    console.log('You are not allowed on board');
-  } else {
-    console.log('Welcome aboard');
-  }
-};
+// const checkBaggage = function (items) {
+//   const baggage = items.toLowerCase();
+//   if (baggage.includes('knife') || baggage.includes('gun')) {
+//     console.log('You are not allowed on board');
+//   } else {
+//     console.log('Welcome aboard');
+//   }
+// };
 
-checkBaggage('I have a laptop, some Food and a pocket knife');
-checkBaggage('Socks and Underwear');
-checkBaggage('Snacks and magazines and a gun');
+// checkBaggage('I have a laptop, some Food and a pocket knife');
+// checkBaggage('Socks and Underwear');
+// checkBaggage('Snacks and magazines and a gun');
