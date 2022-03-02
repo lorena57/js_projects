@@ -566,3 +566,8 @@
 // checkBaggage('I have a laptop, some Food and a pocket knife');
 // checkBaggage('Socks and Underwear');
 // checkBaggage('Snacks and magazines and a gun');
+
+const addSpaces = 'Let me move to another seat';
+const revisedAddSpaces = addSpaces.split(' ');
+
+console.log(revisedAddSpaces);
