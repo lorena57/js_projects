@@ -568,16 +568,43 @@
 // checkBaggage('Snacks and magazines and a gun');
 
 //Split
-const addSpaces = 'Let me move to another seat';
-const revisedAddSpaces = addSpaces.split(' ');
+// const addSpaces = 'Let me move to another seat';
+// const revisedAddSpaces = addSpaces.split(' ');
 
-console.log(revisedAddSpaces);
+// console.log(revisedAddSpaces);
 
-const [firstName, lastName] = 'Minnie Mouse'.split(' ');
+// const [firstName, lastName] = 'Minnie Mouse'.split(' ');
 
-console.log(firstName);
+// console.log(firstName);
 
 //Joining the items
-const testing = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+// const testing = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
 
-console.log(testing);
+// console.log(testing);
+
+// const capitalizeName = function (name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//   }
+//   console.log(namesUpper.join(' '));
+// };
+
+// capitalizeName('minnie mouse');
+// capitalizeName('mickey mouse');
+
+//Refactored
+// const capitalizeName = function (name) {
+//   const names = name.split(' ');
+//   const namesUpper = [];
+
+//   for (const n of names) {
+//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(namesUpper.join(' '));
+// };
+
+// capitalizeName('minnie mouse');
+// capitalizeName('mickey mouse');
