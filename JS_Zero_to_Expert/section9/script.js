@@ -623,12 +623,12 @@
 // console.log(maskCreditCard('156986515634897986541'));
 
 //Repeat
-const messageRepeat = 'Bad weather..All departures delayed.';
+// const messageRepeat = 'Bad weather..All departures delayed.';
 
-console.log(messageRepeat.repeat(5));
+// console.log(messageRepeat.repeat(5));
 
-const planesInLine = function (n) {
-  console.log(`There are ${n} planes in line ${'space'.repeat(n)}`);
-};
+// const planesInLine = function (n) {
+//   console.log(`There are ${n} planes in line ${'space'.repeat(n)}`);
+// };
 
-planesInLine(10);
+// planesInLine(10);
