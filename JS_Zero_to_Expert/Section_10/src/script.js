@@ -40,3 +40,10 @@ const checkIn = function (flightNum, passenger) {
 checkIn(flight, whoAmI);
 console.log(flight);
 console.log(whoAmI);
+
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 10000000000);
+};
+
+newPassport(whoAmI);
+checkIn(flight, whoAmI);
