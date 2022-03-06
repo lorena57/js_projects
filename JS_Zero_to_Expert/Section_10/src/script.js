@@ -47,3 +47,10 @@
 
 // newPassport(whoAmI);
 // checkIn(flight, whoAmI);
+
+const getMyInfo = {
+  name: 'Mighty Mouse',
+  superpower: "Fly's",
+};
+
+console.log(getMyInfo);
