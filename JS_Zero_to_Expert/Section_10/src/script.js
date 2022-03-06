@@ -20,30 +20,30 @@
 // createBooking('123456');
 // createBooking('ABCDEF');
 
-const flight = 'LH234';
+// const flight = 'LH234';
 
-const whoAmI = {
-  name: 'Minnie Mouse',
-  passport: 461484521,
-};
+// const whoAmI = {
+//   name: 'Minnie Mouse',
+//   passport: 461484521,
+// };
 
-const checkIn = function (flightNum, passenger) {
-  flightNum = 'LA123';
-  passenger.name = 'Mrs.' + passenger.name;
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = 'LA123';
+//   passenger.name = 'Mrs.' + passenger.name;
 
-  if (passenger.passport === 461484521) {
-  } else {
-    alert('wrong passport!');
-  }
-};
+//   if (passenger.passport === 461484521) {
+//   } else {
+//     alert('wrong passport!');
+//   }
+// };
 
-checkIn(flight, whoAmI);
-console.log(flight);
-console.log(whoAmI);
+// checkIn(flight, whoAmI);
+// console.log(flight);
+// console.log(whoAmI);
 
-const newPassport = function (person) {
-  person.passport = Math.trunc(Math.random() * 10000000000);
-};
+// const newPassport = function (person) {
+//   person.passport = Math.trunc(Math.random() * 10000000000);
+// };
 
-newPassport(whoAmI);
-checkIn(flight, whoAmI);
+// newPassport(whoAmI);
+// checkIn(flight, whoAmI);
