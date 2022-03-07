@@ -47,3 +47,5 @@
 
 // newPassport(whoAmI);
 // checkIn(flight, whoAmI);
+
+//Difference between first-class and higher order functions
