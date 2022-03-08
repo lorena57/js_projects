@@ -49,3 +49,5 @@
 // checkIn(flight, whoAmI);
 
 //Difference between first-class and higher order functions
+
+//Today I will not study
