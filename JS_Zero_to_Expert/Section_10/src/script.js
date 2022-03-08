@@ -51,3 +51,11 @@
 //Difference between first-class and higher order functions
 
 //Today I will not study
+
+const workingObject = {
+  strings: 'Toy Story is a great cartoon',
+  opposite: true,
+  number: 5,
+};
+
+console.log(workingObject);
