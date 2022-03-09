@@ -52,10 +52,11 @@
 
 //Today I will not study
 
-const workingObject = {
-  strings: 'Toy Story is a great cartoon',
-  opposite: true,
-  number: 5,
+const oneWord = function (str) {
+  return str.replace(/ /g, ' ').toLowerCase();
 };
 
-console.log(workingObject);
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
