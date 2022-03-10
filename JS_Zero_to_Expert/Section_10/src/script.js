@@ -50,22 +50,22 @@
 
 //Difference between first-class and higher order functions
 
-//Today I will not study
+//Call back functions
 
-const oneWord = function (str) {
-  return str.replace(/ /g, ' ').toLowerCase();
-};
+// const oneWord = function (str) {
+//   return str.replace(/ /g, ' ').toLowerCase();
+// };
 
-const upperFirstWord = function (str) {
-  const [first, ...others] = str.split(' ');
-  return [first.toUpperCase(), ...others].join(' ');
-};
+// const upperFirstWord = function (str) {
+//   const [first, ...others] = str.split(' ');
+//   return [first.toUpperCase(), ...others].join(' ');
+// };
 
-const transformer = function (str, fn) {
-  console.log(`Original string: ${str}`);
-  console.log(`Transformed string: ${fn(str)}`);
+// const transformer = function (str, fn) {
+//   console.log(`Original string: ${str}`);
+//   console.log(`Transformed string: ${fn(str)}`);
 
-  console.log(`Transformed by: ${fn.name}`);
-};
+//   console.log(`Transformed by: ${fn.name}`);
+// };
 
-transformer("I'm the best!", upperFirstWord);
+// transformer("I'm the best!", upperFirstWord);
