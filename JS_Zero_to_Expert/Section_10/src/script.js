@@ -70,16 +70,27 @@
 
 // transformer("I'm the best!", upperFirstWord);
 
-const greet = function (greeting) {
-  return function (name) {
-    console.log(`${greeting} ${name}`);
-  };
-};
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
 
 //greetHey is the function inside of greet
 //Call the function below to understand
 
-const greetHey = greet('Hey');
+// const greetHey = greet('Hey');
+
+// greetHey('Minnie');
+// greetHey('Mickey');
+
+const regreet = (greeting) => {
+  return (name) => {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greetHey = regreet('Hey');
 
 greetHey('Minnie');
 greetHey('Mickey');
