@@ -84,11 +84,15 @@
 // greetHey('Minnie');
 // greetHey('Mickey');
 
-const regreet = (greeting) => {
-  return (name) => {
-    console.log(`${greeting} ${name}`);
-  };
-};
+//Arrow function example 1
+// const regreet = (greeting) => {
+//   return (name) => {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+//Arrow function example 2
+const regreet = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
 const greetHey = regreet('Hey');
 
