@@ -107,7 +107,26 @@ const delta = {
     console.log(
       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
     );
+    this.bookings.push({ flight: ` ${this.iataCode}${flightNum}`, name });
   },
 };
 
 delta.book(123, 'Minnie Mouse');
+delta.book(123, 'Mickey Mouse');
+
+console.log(delta);
+
+const eurowings = {
+  name: 'Eurowings',
+  iataCode: 'EW',
+  bookings: [],
+};
+
+const book = delta.book;
+
+//Does NOT work
+//book(23, 'Sarah Williams')
+
+book.call(eurowings, 23, 'Sarah Williams');
+
+console.log(eurowings);
