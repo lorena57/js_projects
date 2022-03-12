@@ -92,9 +92,9 @@
 // };
 
 //Arrow function example 2
-const regreet = (greeting) => (name) => console.log(`${greeting} ${name}`);
+// const regreet = (greeting) => (name) => console.log(`${greeting} ${name}`);
 
-const greetHey = regreet('Hey');
+// const greetHey = regreet('Hey');
 
-greetHey('Minnie');
-greetHey('Mickey');
+// greetHey('Minnie');
+// greetHey('Mickey');
