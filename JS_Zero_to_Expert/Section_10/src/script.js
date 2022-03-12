@@ -98,3 +98,16 @@
 
 // greetHey('Minnie');
 // greetHey('Mickey');
+
+const delta = {
+  airline: 'Delta',
+  iataCode: 'DT',
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+  },
+};
+
+delta.book(123, 'Minnie Mouse');
