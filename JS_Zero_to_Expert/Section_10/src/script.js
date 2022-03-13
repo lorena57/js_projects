@@ -142,3 +142,11 @@ bookDT(951, 'Chance Smith');
 const bookWE58 = book.bind(eurowings, 99);
 bookWE58('Martha Stewart');
 bookWE58('Rocky Balboa');
+
+//partial application
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+
+console.log(addVAT(100));
