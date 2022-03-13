@@ -138,3 +138,7 @@ const bookDT = book.bind(delta);
 
 bookEW(753, 'Nancy Williams');
 bookDT(951, 'Chance Smith');
+
+const bookWE58 = book.bind(eurowings, 99);
+bookWE58('Martha Stewart');
+bookWE58('Rocky Balboa');
