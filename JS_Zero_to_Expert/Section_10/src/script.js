@@ -117,7 +117,7 @@ delta.book(123, 'Mickey Mouse');
 console.log(delta);
 
 const eurowings = {
-  name: 'Eurowings',
+  airline: 'Eurowings',
   iataCode: 'EW',
   bookings: [],
 };
@@ -127,6 +127,14 @@ const book = delta.book;
 //Does NOT work
 //book(23, 'Sarah Williams')
 
+//Call method
 book.call(eurowings, 23, 'Sarah Williams');
 
 console.log(eurowings);
+
+//Bind method
+const bookEW = book.bind(eurowings);
+const bookDT = book.bind(delta);
+
+bookEW(753, 'Nancy Williams');
+bookDT(951, 'Chance Smith');
