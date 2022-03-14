@@ -99,54 +99,54 @@
 // greetHey('Minnie');
 // greetHey('Mickey');
 
-const delta = {
-  airline: 'Delta',
-  iataCode: 'DT',
-  bookings: [],
-  book(flightNum, name) {
-    console.log(
-      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
-    this.bookings.push({ flight: ` ${this.iataCode}${flightNum}`, name });
-  },
-};
+// const delta = {
+//   airline: 'Delta',
+//   iataCode: 'DT',
+//   bookings: [],
+//   book(flightNum, name) {
+//     console.log(
+//       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+//     );
+//     this.bookings.push({ flight: ` ${this.iataCode}${flightNum}`, name });
+//   },
+// };
 
-delta.book(123, 'Minnie Mouse');
-delta.book(123, 'Mickey Mouse');
+// delta.book(123, 'Minnie Mouse');
+// delta.book(123, 'Mickey Mouse');
 
-console.log(delta);
+// console.log(delta);
 
-const eurowings = {
-  airline: 'Eurowings',
-  iataCode: 'EW',
-  bookings: [],
-};
+// const eurowings = {
+//   airline: 'Eurowings',
+//   iataCode: 'EW',
+//   bookings: [],
+// };
 
-const book = delta.book;
+// const book = delta.book;
 
 //Does NOT work
 //book(23, 'Sarah Williams')
 
 //Call method
-book.call(eurowings, 23, 'Sarah Williams');
+// book.call(eurowings, 23, 'Sarah Williams');
 
-console.log(eurowings);
+// console.log(eurowings);
 
 //Bind method
-const bookEW = book.bind(eurowings);
-const bookDT = book.bind(delta);
+// const bookEW = book.bind(eurowings);
+// const bookDT = book.bind(delta);
 
-bookEW(753, 'Nancy Williams');
-bookDT(951, 'Chance Smith');
+// bookEW(753, 'Nancy Williams');
+// bookDT(951, 'Chance Smith');
 
-const bookWE58 = book.bind(eurowings, 99);
-bookWE58('Martha Stewart');
-bookWE58('Rocky Balboa');
+// const bookWE58 = book.bind(eurowings, 99);
+// bookWE58('Martha Stewart');
+// bookWE58('Rocky Balboa');
 
 //partial application
-const addTax = (rate, value) => value + value * rate;
-console.log(addTax(0.1, 200));
+// const addTax = (rate, value) => value + value * rate;
+// console.log(addTax(0.1, 200));
 
-const addVAT = addTax.bind(null, 0.23);
+// const addVAT = addTax.bind(null, 0.23);
 
-console.log(addVAT(100));
+// console.log(addVAT(100));
