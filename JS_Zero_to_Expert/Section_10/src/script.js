@@ -150,3 +150,15 @@
 // const addVAT = addTax.bind(null, 0.23);
 
 // console.log(addVAT(100));
+
+//Immediately invoked function expressions (IIFE)
+const runOnce = function () {
+  console.log('This will never run again');
+};
+
+runOnce();
+
+//Immediately invoked function expressions (IIFE)
+(function () {
+  console.log('Thsi will never run again');
+})();
