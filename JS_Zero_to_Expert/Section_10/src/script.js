@@ -161,6 +161,10 @@ runOnce();
 //Immediately invoked function expressions (IIFE)
 //The function is wrapped in parenthesis and is called after the bracket
 
+//Regular IIFE
 (function () {
   console.log('This will never run again');
 })();
+
+//Arrow function IIEF
+(() => console.log('This will never run again'))();
