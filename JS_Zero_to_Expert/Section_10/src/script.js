@@ -159,6 +159,8 @@ const runOnce = function () {
 runOnce();
 
 //Immediately invoked function expressions (IIFE)
+//The function is wrapped in parenthesis and is called after the bracket
+
 (function () {
-  console.log('Thsi will never run again');
+  console.log('This will never run again');
 })();
