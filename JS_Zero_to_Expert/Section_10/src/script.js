@@ -114,7 +114,7 @@
 // delta.book(123, 'Minnie Mouse');
 // delta.book(123, 'Mickey Mouse');
 
-// console.log(delta);
+// console.log(delta.bookings);
 
 // const eurowings = {
 //   airline: 'Eurowings',
@@ -152,19 +152,19 @@
 // console.log(addVAT(100));
 
 //Immediately invoked function expressions (IIFE)
-const runOnce = function () {
-  console.log('This will never run again');
-};
+// const runOnce = function () {
+//   console.log('This will never run again');
+// };
 
-runOnce();
+// runOnce();
 
 //Immediately invoked function expressions (IIFE)
 //The function is wrapped in parenthesis and is called after the bracket
 
 //Regular IIFE
-(function () {
-  console.log('This will never run again');
-})();
+// (function () {
+//   console.log('This will never run again');
+// })();
 
 //Arrow function IIEF
-(() => console.log('This will never run again'))();
+// (() => console.log('This will never run again'))();
