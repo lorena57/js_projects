@@ -168,3 +168,18 @@
 
 //Arrow function IIEF
 // (() => console.log('This will never run again'))();
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
