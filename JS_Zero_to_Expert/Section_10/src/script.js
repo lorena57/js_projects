@@ -169,17 +169,18 @@
 //Arrow function IIEF
 // (() => console.log('This will never run again'))();
 
-const secureBooking = function () {
-  let passengerCount = 0;
+//Closures - A closure makes sure that a function doesn't loose connection to variable that existed at the functions birthplace
+// const secureBooking = function () {
+//   let passengerCount = 0;
 
-  return function () {
-    passengerCount++;
-    console.log(`${passengerCount} passengers`);
-  };
-};
+//   return function () {
+//     passengerCount++;
+//     console.log(`${passengerCount} passengers`);
+//   };
+// };
 
-const booker = secureBooking();
+// const booker = secureBooking();
 
-booker();
-booker();
-booker();
+// booker();
+// booker();
+// booker();
