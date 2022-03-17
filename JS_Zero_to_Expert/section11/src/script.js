@@ -20,3 +20,15 @@ console.log(arr.slice(1, -2));
 console.log(arr.splice(2));
 //-1 removes the last item from the array
 arr.splice(-1);
+
+//Reverse
+//Reverse mutates the array
+let arr2 = ['j', 'i', 'h', 'g', 'f'];
+
+console.log(arr2.reverse());
+
+//concat
+const letters = arr.concat(arr2);
+//or you can
+
+console.log([...arr, ...arr2]);
