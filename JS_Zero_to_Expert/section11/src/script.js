@@ -1,5 +1,7 @@
 'use strict';
 
+//SLICE
+
 let arr = ['a', 'b', 'c', 'd', 'e'];
 
 console.log(arr.slice(2));
@@ -11,3 +13,10 @@ console.log(arr.slice(2, 4));
 console.log(arr.slice(-2));
 
 console.log(arr.slice(1, -2));
+
+//SPLICE
+//SPLICE mutates the array
+
+console.log(arr.splice(2));
+//-1 removes the last item from the array
+arr.splice(-1);
