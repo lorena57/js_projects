@@ -31,3 +31,7 @@
 // const letters = arr.concat(arr2);
 //or you can
 // console.log([...arr, ...arr2]);
+
+const arr = [23, 11, 64];
+
+console.log(arr.at(0));
