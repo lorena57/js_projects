@@ -40,3 +40,5 @@ console.log(arr[arr.length - 1]);
 //Copy of the original array
 console.log(arr.slice(-1)[0]);
 console.log(arr.at(-1));
+
+console.log('Minnie'.at(0));
