@@ -62,8 +62,13 @@
 //   }
 // });
 
-const currencies = new Map(
+//Map forEach
+const currencies = new Map([
   ['USD', 'Unites States dollar'],
   ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling']
-);
+  ['GBP', 'Pound sterling'],
+]);
+
+currencies.forEach(function (value, key, map) {
+  console.log(`${key}: ${value}`);
+});
