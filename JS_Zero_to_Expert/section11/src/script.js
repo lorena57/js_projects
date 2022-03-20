@@ -61,3 +61,9 @@
 //     console.log(`You withdrew ${Math.abs(movement)}`);
 //   }
 // });
+
+const currencies = new Map(
+  ['USD', 'Unites States dollar'],
+  ['EUR', 'Euro'],
+  ['GBP', 'Pound sterling']
+);
