@@ -63,22 +63,22 @@
 // });
 
 //Map forEach
-const currencies = new Map([
-  ['USD', 'Unites States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
+// const currencies = new Map([
+//   ['USD', 'Unites States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
 
-currencies.forEach(function (value, key, map) {
-  console.log(`${key}: ${value}`);
-});
+// currencies.forEach(function (value, key, map) {
+//   console.log(`${key}: ${value}`);
+// });
 
 //Set (set only prints the unique value)
 //Set forEach
-const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+// const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
 
-console.log(currenciesUnique);
+// console.log(currenciesUnique);
 
-currenciesUnique.forEach(function (value, key, map) {
-  console.log(`${key}: ${value}`);
-});
+// currenciesUnique.forEach(function (value, key, map) {
+//   console.log(`${key}: ${value}`);
+// });
